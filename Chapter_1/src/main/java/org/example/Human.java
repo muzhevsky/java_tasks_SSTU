@@ -1,19 +1,20 @@
 package org.example;
 
 public class Human {
-    public String Name;
+    private String _name;
 
-    public int Height;
+    private int _height;
 
     public Human(String name, int height){
-        Name = name;
+        _name = name;
         if(height > 50)
-            Height = height;
+            _height = height;
         else
-            Height = 175;
+            _height = 175;
     }
 
     public String getInfo(){
-        return Name+", height: "+Integer.toString(Height);
+
+        return _name +", height: "+Integer.toString(_height);
     }
 }

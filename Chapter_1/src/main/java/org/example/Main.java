@@ -14,6 +14,7 @@ public class Main {
         System.out.println(point3.getInfo());
 
         System.out.println();
+        
         //////////////////////////////////////////////////////////
         // TASK 1.1.2
 
@@ -27,25 +28,21 @@ public class Main {
         System.out.println(jensen.getInfo());
 
         System.out.println();
+
         //////////////////////////////////////////////////////////
         // TASK 1.1.3
 
-        Name name1 = new Name();
-        name1.Firstname = "Клеопатра";
+        Name name1 = new Name("Клеопатра", null, "");
         System.out.println(name1.getInfo());
 
-        Name name2 = new Name();
-        name2.Firstname = "Александр";
-        name2.Secondname = "Пушкин";
-        name2.Patronymic = "Сергеевич";
+        Name name2 = new Name("Александр", "Пушкин", "Сергеевич");
         System.out.println(name2.getInfo());
 
-        Name name3 = new Name();
-        name3.Firstname = "Владимир";
-        name3.Secondname = "Маяковский";
+        Name name3 = new Name("Владимир", "Маяковский", "");
         System.out.println(name3.getInfo());
 
         System.out.println();
+
         //////////////////////////////////////////////////////////
         // TASK 1.1.4
 
@@ -59,19 +56,17 @@ public class Main {
         System.out.println(time3.getFormattedTime());
 
         System.out.println();
+
         //////////////////////////////////////////////////////////
         // TASK 1.1.5
 
-        House house1 = new House();
-        house1.FloorNumber = 100;
+        House house1 = new House(100);
         System.out.println(house1.getInfo());
 
-        House house2 = new House();
-        house2.FloorNumber = 21;
+        House house2 = new House(21);
         System.out.println(house2.getInfo());
 
-        House house3 = new House();
-        house3.FloorNumber = 111;
+        House house3 = new House(111);
         System.out.println(house3.getInfo());
     }
 }

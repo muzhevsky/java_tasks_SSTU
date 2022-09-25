@@ -1,10 +1,14 @@
 package org.example;
 
 public class House {
-    public int FloorNumber;
+    private int _floorAmount;
+
+    public House(int amount){
+        _floorAmount = amount;
+    }
 
     public String getInfo(){
-        if(FloorNumber%10 == 1 && FloorNumber%100!=11) return "дом с "+Integer.toString(FloorNumber)+" этажом";
-        return "дом с "+Integer.toString(FloorNumber)+" этажами";
+        if(_floorAmount %10 == 1 && _floorAmount %100!=11) return "дом с "+Integer.toString(_floorAmount)+" этажом";
+        return "дом с "+Integer.toString(_floorAmount)+" этажами";
     }
 }
