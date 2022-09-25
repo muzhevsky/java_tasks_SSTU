@@ -1,21 +1,35 @@
 package org.example;
 
-public class Time {
+public class Time implements IPrintable {
     private int _ticks;
 
     public Time(int ticks){
-        _ticks = ticks;
+        if (ticks >= 0)
+            _ticks = ticks;
+        else
+            _ticks = 0;
     }
 
-    public String getFormattedTime(){
+    public String getDataForPrinting(){
         int hours, minutes;
 
-        hours = _ticks /3600;
-        _ticks -= hours*3600;
+        int seconds = _ticks;
 
-        minutes = _ticks /60;
-        _ticks -= minutes*60;
+        hours = seconds / 3600;
+        seconds -= hours * 3600;
+        hours %= 24;
 
-        return Integer.toString(hours)+":"+Integer.toString(minutes)+":"+Integer.toString(_ticks);
+        minutes = seconds / 60;
+        seconds -= minutes * 60;
+
+        return format(hours)+":"+
+               format(minutes)+":"+
+               format(seconds);
+    }
+
+    private String format(int timeValue){
+        return timeValue > 9 ?
+                Integer.toString(timeValue) :
+                "0" + Integer.toString(timeValue);
     }
 }

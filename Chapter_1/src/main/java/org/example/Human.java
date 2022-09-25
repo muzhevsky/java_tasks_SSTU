@@ -1,6 +1,6 @@
 package org.example;
 
-public class Human {
+public class Human implements IPrintable {
     private String _name;
 
     private int _height;
@@ -13,7 +13,7 @@ public class Human {
             _height = 175;
     }
 
-    public String getInfo(){
+    public String getDataForPrinting(){
 
         return _name +", height: "+Integer.toString(_height);
     }

@@ -1,6 +1,6 @@
 package org.example;
 
-public class Point {
+public class Point implements IPrintable {
     private int _x;
     private int _y;
 
@@ -11,7 +11,7 @@ public class Point {
 
     public Point(){ }
 
-    public String getInfo(){
+    public String getDataForPrinting(){
         return "{"+ _x +";"+ _y +"}";
     }
 }

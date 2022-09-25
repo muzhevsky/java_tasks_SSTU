@@ -1,6 +1,6 @@
 package org.example;
 
-public class Name {
+public class Name implements IPrintable {
     private String _firstname;
     private String _secondname;
     private String _patronymic;
@@ -13,7 +13,7 @@ public class Name {
 
     // АХАХХАХАХХАХАХХАХА НЕТ ЗНАЧЕНИЙ ПО УМОЛЧАНИЮ ДЛЯ МЕТОДОВ АХАХХАХАХХАХА
 
-    public String getInfo(){
+    public String getDataForPrinting(){
         String result = new String();
         if(_firstname !=null) result += _firstname +" ";
         if(_secondname !=null) result += _secondname +" ";
