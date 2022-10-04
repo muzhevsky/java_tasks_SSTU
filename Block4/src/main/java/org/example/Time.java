@@ -10,6 +10,10 @@ public class Time{
             this.ticks = 0;
     }
 
+    public Time(int hours, int minutes, int seconds){
+        this(hours*3600 + minutes*60 + seconds);
+    }
+
     public String toString(){
         int hours, minutes;
 

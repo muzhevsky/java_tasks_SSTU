@@ -1,20 +1,19 @@
 package org.example;
 
-public class Human implements IPrintable {
-    private String _name;
-
-    private int _height;
+public class Human{
+    private String name;
+    private int height;
 
     public Human(String name, int height){
-        _name = name;
+        this.name = name;
         if(height > 50)
-            _height = height;
+            this.height = height;
         else
-            _height = 175;
+            this.height = 175;
     }
 
-    public String getDataForPrinting(){
+    public String toString(){
 
-        return _name +", height: "+Integer.toString(_height);
+        return name +", height: "+Integer.toString(height);
     }
 }

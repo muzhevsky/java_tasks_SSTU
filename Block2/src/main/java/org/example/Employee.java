@@ -1,20 +1,20 @@
 package org.example;
 
 public class Employee {
-    private String _name;
-    public String Name() {return _name;};
+    private String name;
+    public String Name() {return name;};
 
-    public Department Department;
+    public Department department;
 
     public Employee(String name, Department department){
-        _name = name;
-        Department = department;
+        this.name = name;
+        this.department = department;
     }
 
     public String toString(){
-        if(this == Department.Boss)
-            return _name + " начальник отдела "+Department.Name();
+        if(this == department.Boss)
+            return name + " начальник отдела "+ department.Name();
         else
-            return _name + " работает в отделе "+ Department.Name();
+            return name + " работает в отделе "+ department.Name();
     }
 }

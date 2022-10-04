@@ -1,8 +1,8 @@
 package org.example;
 
-public class Point{
-    private int x;
-    private int y;
+public class Point {
+    public int x;
+    public int y;
 
     public Point(int x, int y){
         this.x = x;
@@ -10,6 +10,6 @@ public class Point{
     }
 
     public String toString(){
-        return "{"+ x +";"+ y +"}";
+        return "Point { x = "+ x +", y = "+ y +" }";
     }
 }

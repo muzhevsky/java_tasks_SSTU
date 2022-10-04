@@ -1,22 +1,22 @@
 package org.example;
 
 public class Name {
-    public String Firstname;
-    public String Secondname;
-    public String Patronymic;
+    public String firstname;
+    public String secondname;
+    public String patronymic;
 
     public Name(String firstname, String secondname, String patronymic){
-        Firstname = firstname;
-        Secondname = secondname;
-        Patronymic = patronymic;
+        this.firstname = firstname;
+        this.secondname = secondname;
+        this.patronymic = patronymic;
     }
 
 
     public String toString(){
         String result = new String();
-        if(Secondname !=null) result += Secondname;
-        if(Firstname !=null) result += " "+ Firstname;
-        if(Patronymic !=null) result += " "+ Patronymic;
+        if(secondname !=null) result += secondname;
+        if(firstname !=null) result += " "+ firstname;
+        if(patronymic !=null) result += " "+ patronymic;
         return result;
     }
 }

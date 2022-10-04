@@ -1,12 +1,12 @@
 package org.example;
 
 public class Department {
-    private String _name;
-    public String Name() {return _name;};
+    private String name;
+    public String Name() {return name;};
     public Employee Boss;
 
     public Department(String name, Employee boss){
-        _name = name;
+        this.name = name;
         Boss = boss;
     }
 }
