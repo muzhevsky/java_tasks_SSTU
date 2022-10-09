@@ -17,6 +17,10 @@ public class Student {
         if(name != null) this.name = name;
         setMarks(marks);
     }
+
+    public int[] getMarks(){
+        return Arrays.copyOf(marks, marks.length);
+    }
     public void setMarks(int...marks){
         if(marks != null){
             if(isValid(marks)){
@@ -25,10 +29,6 @@ public class Student {
             }
             else this.marks = new int[0];
         }
-    }
-
-    public int[] getMarks(){
-        return Arrays.copyOf(marks, marks.length);
     }
 
     public void addMarks(int...marks){
@@ -46,6 +46,33 @@ public class Student {
         }
     }
 
+    public double getAverageMark(){
+        if (actualLength==0) return 0;
+
+        int marksSum = 0;
+        for(int i : marks){
+            marksSum += i;
+        }
+
+        return (double)marksSum/marks.length;
+    }
+
+    public boolean isExcellent(){
+        if(marks.length == 0) return false;
+
+        for(int i : marks){
+            if (i!=5) return false;
+        }
+        return true;
+    }
+
+    private boolean isValid(int[] array){
+        for(int item : array){
+            if (item > 5 || item < 2) return false;
+        }
+        return true;
+    }
+
     public String toString(){
         String marksString = "";
 
@@ -57,12 +84,5 @@ public class Student {
         }
 
         return "Student{ name = '"+name+"', marks = [ "+marksString+" ]";
-    }
-
-    private boolean isValid(int[] array){
-        for(int item : array){
-            if (item > 5 || item < 2) return false;
-        }
-        return true;
     }
 }

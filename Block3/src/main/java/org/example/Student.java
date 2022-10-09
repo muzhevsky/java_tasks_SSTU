@@ -23,7 +23,7 @@ public class Student {
     }
     public void setMarks(int...marks){
         if(marks != null){
-            if(isValid(marks)){
+            if(isValidMarksArray(marks)){
                 this.marks = Arrays.copyOf(marks,marks.length);
                 actualLength = marks.length;
             }
@@ -36,7 +36,7 @@ public class Student {
 
     public void addMarks(int...marks){
 
-        if(isValid(marks)) {
+        if(isValidMarksArray(marks)) {
 
             if (actualLength + marks.length > this.marks.length) {
                 this.marks = Arrays.copyOf(this.marks, this.marks.length * 2);
@@ -62,7 +62,7 @@ public class Student {
         return "Student{ name = '"+name+"', marks = [ "+marksString+" ]";
     }
 
-    private boolean isValid(int[] array){
+    private boolean isValidMarksArray(int[] array){
         for(int item : array){
             if (item > 5 || item < 2) return false;
         }
