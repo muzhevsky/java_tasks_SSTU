@@ -8,7 +8,7 @@ public class Department {
     private ArrayList<Employee> employees;
 
 
-    public Department(String name, Employee boss){
+    public Department(String name, Employee boss) {
         this.name = name;
         this.boss = boss;
         employees = new ArrayList<Employee>();
@@ -18,22 +18,26 @@ public class Department {
 
     public String getName() {
         return name;
-    };
+    }
+
     public Employee getBoss() {
         return boss;
     }
 
     public void setBoss(Employee boss) {
-        if(boss != null)
+        if (boss != null)
             this.boss = boss;
     }
 
-    public void addEmployee(Employee employee){
+    public void addEmployee(Employee employee) {
         employees.add(employee);
     }
 
-    public ArrayList<Employee> getAllEmpoyees(){
+    public ArrayList<Employee> getAllEmpoyees() {
         return new ArrayList<Employee>(employees);
     }
 
+    public void removeEmployee(Employee employee) {
+        employees.remove(employee);
+    }
 }

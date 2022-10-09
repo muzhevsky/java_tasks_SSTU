@@ -7,18 +7,18 @@ import java.util.List;
 public class Polyline {
     private List<Point> points;
 
-    public Polyline(){
+    public Polyline() {
         points = new ArrayList<Point>();
     }
 
-    public Polyline(Point...points){
+    public Polyline(Point... points) {
         this();
         setPoints(points);
     }
 
-    public void setPoints(Point...points){
-        if(points!=null){
-            this.points = new ArrayList<Point>(Arrays.asList(Arrays.copyOf(points,points.length)));
+    public void setPoints(Point... points) {
+        if (points != null) {
+            this.points = new ArrayList<Point>(Arrays.asList(Arrays.copyOf(points, points.length)));
         }
     }
 }

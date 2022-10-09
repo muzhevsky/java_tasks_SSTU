@@ -5,7 +5,7 @@ public class Path {
     private int moveCost;
 
     public Path(Town destinationTown, int moveCost) {
-        if (destinationTown!=null)
+        if (destinationTown != null)
             this.destinationTown = destinationTown;
         else
             throw new IllegalArgumentException("cannot create new path with destinationTown = null");
@@ -13,7 +13,7 @@ public class Path {
     }
 
     public void setMoveCost(int moveCost) {
-        if(moveCost > 0)
+        if (moveCost > 0)
             this.moveCost = moveCost;
         else
             throw new IllegalArgumentException("cannot create new path with moveCost <=0");

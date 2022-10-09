@@ -4,18 +4,24 @@ public class Line {
     private Point start;
     private Point end;
 
-    public Line(Point start, Point end){
-        this.start = start;
-        this.end = end;
-    }
-    public Line(int x1, int y1, int x2, int y2){
-        this(new Point(x1,y1),new Point(x2,y2));
+    public Line(Point start, Point end) {
+        this(start.x, start.y, end.x, end.y);
     }
 
-    public String toString(){
-        return "Line from "+ start.toString()+" to "+ end.toString();
+    public Line(int x1, int y1, int x2, int y2) {
+        this.start = new Point(x1, y1);
+        this.end = new Point(x2, y2);
     }
 
-    public Point GetStart(){ return start;}
-    public Point GetEnd(){ return end;}
+    public String toString() {
+        return "Line from " + start.toString() + " to " + end.toString();
+    }
+
+    public Point GetStart() {
+        return new Point(start);
+    }
+
+    public Point GetEnd() {
+        return new Point(end);
+    }
 }

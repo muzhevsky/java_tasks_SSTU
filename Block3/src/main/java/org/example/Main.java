@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         // TASK 1.3.1
-        Student vasya = new Student("vasya",3,4,5);
-        Student petya = new Student("petya",vasya.getMarks());
+        Student vasya = new Student("vasya", 3, 4, 5);
+        Student petya = new Student("petya", vasya.getMarks());
         System.out.println(vasya);
         System.out.println(petya);
         vasya.addMarks(2);
@@ -37,18 +37,18 @@ public class Main {
         Town e = new Town("E");
         Town f = new Town("F");
 
-        a.addPath(b,5);
-        a.addPath(f,1);
-        a.addPath(new Path(d,6));
-        b.addPath(a,5);
-        c.addPath(b,3);
-        c.addPath(d,4);
-        d.addPath(c,4);
-        d.addPath(e,2);
-        d.addPath(a,6);
-        e.addPath(f,2);
-        f.addPath(e,2);
-        f.addPath(b,1);
+        a.addPath(b, 5);
+        a.addPath(f, 1);
+        a.addPath(d, 6);
+        b.addPath(a, 5);
+        c.addPath(b, 3);
+        c.addPath(d, 4);
+        d.addPath(c, 4);
+        d.addPath(e, 2);
+        d.addPath(a, 6);
+        e.addPath(f, 2);
+        f.addPath(e, 2);
+        f.addPath(b, 1);
 
         System.out.println(a);
         System.out.println(b);
@@ -60,14 +60,12 @@ public class Main {
         // TASK 1.3.4
 
         Employee employee = new Employee("a");
-        Department xboxGames = new Department("XboxGames",employee);
+        Department xboxGames = new Department("XboxGames", employee);
         Employee employee1 = new Employee("b");
         employee1.setDepartment(xboxGames);
         Employee employee2 = new Employee("c");
         employee2.setDepartment(xboxGames);
 
-        for(Employee item : xboxGames.getAllEmpoyees()){
-            System.out.println(item);
-        }
+        for (Employee item : xboxGames.getAllEmpoyees()) System.out.println(item);
     }
 }
