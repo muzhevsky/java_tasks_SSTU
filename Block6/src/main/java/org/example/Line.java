@@ -20,6 +20,20 @@ public class Line {
         return Math.sqrt(Math.pow(start.x-end.x,2)+Math.pow(start.y-end.y,2));
     }
 
-    public Point GetStart(){ return start;}
-    public Point GetEnd(){ return end;}
+    public Point getStart(){ return new Point(start);}
+    public Point getEnd(){ return new Point(end);}
+
+    public void setStart(Point point){
+        setStart(point.x, point.y);
+    }
+    public void setStart(double x, double y){
+        start = new Point(x,y);
+    }
+
+    public void setEnd(Point point){
+        setEnd(point.x, point.y);
+    }
+    public void setEnd(double x, double y){
+        end = new Point(x,y);
+    }
 }

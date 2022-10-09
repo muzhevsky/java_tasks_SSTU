@@ -7,7 +7,8 @@ public class Square {
     public Square(Point leftTopPoint, double sideSize){
         if(leftTopPoint == null)
             throw new IllegalArgumentException("point is null");
-
+        if(sideSize < 0)
+            throw new IllegalArgumentException("side size is less then zero");
         this.leftTopPoint = leftTopPoint;
         this.sideSize = sideSize;
     }

@@ -12,6 +12,11 @@ public class Fraction {
 
         this.nominator = nominator;
         this.denominator = denominator;
+
+        if(nominator < 0 && denominator < 0){
+            this.nominator *= -1;
+            this.denominator *= -1;
+        }
     }
 
     public int getNominator(){

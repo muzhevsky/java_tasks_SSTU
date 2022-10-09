@@ -13,7 +13,7 @@ public class Time {
         if (minutes > 59 || seconds > 59 || hours < 0 || minutes < 0 || seconds < 0)
             throw new IllegalArgumentException("wrong time");
 
-        this.ticks = hours * 3600 + minutes * 60 + seconds;
+        this.ticks = hours%24 * 3600 + minutes * 60 + seconds;
     }
 
     public String toString() {

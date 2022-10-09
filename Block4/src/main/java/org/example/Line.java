@@ -17,11 +17,11 @@ public class Line {
         return "Line from " + start.toString() + " to " + end.toString();
     }
 
-    public Point GetStart() {
+    public Point getStart() {
         return new Point(start);
     }
 
-    public Point GetEnd() {
+    public Point getEnd() {
         return new Point(end);
     }
 }
