@@ -6,6 +6,15 @@ public class Employee {
     private Department department;
 
     public Employee(String name, Department department){
+        if(name == null)
+            throw new IllegalArgumentException("name is null");
+        if(department == null)
+            throw new IllegalArgumentException("department is null");
+
+        if(this.department.getBoss() == this){
+            this.department.setBoss(null);
+        }
+
         this.name = name;
         this.department = department;
     }
@@ -20,6 +29,10 @@ public class Employee {
     public void setDepartment(Department department){
         if (department == null)
             throw new IllegalArgumentException("department is null");
+
+        if(this.department.getBoss() == this){
+            this.department.setBoss(null);
+        }
 
         this.department = department;
     }

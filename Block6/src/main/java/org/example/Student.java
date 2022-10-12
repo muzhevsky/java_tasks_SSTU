@@ -14,8 +14,17 @@ public class Student {
     }
 
     public Student(String name, int... marks) {
-        if (name != null) this.name = name;
-        setMarks(marks);
+        if (name == null)
+            throw new IllegalArgumentException("name is null");
+        this.name = name;
+
+        if (marks != null) {
+            if (!isValid(marks))
+                throw new IllegalArgumentException("invalid marks");
+
+            this.marks = Arrays.copyOf(marks, marks.length);
+            actualLength = marks.length;
+        }
     }
 
     public void setMarks(int... marks) {
@@ -38,19 +47,20 @@ public class Student {
         if (!isValid(marks))
             throw new IllegalArgumentException("invalid marks");
 
-            if (actualLength + marks.length > this.marks.length) {
-                this.marks = Arrays.copyOf(this.marks, this.marks.length * 2);
-            }
+        if (actualLength + marks.length > this.marks.length) {
+            this.marks = Arrays.copyOf(this.marks, this.marks.length * 2);
+        }
 
-            for (int item : marks) {
-                this.marks[actualLength++] = item;
-            }
+        for (int item : marks) {
+            this.marks[actualLength++] = item;
+        }
     }
 
     private boolean isValid(int...marks) {
-        for (int item : marks) {
-            if (item > 5 || item < 2) return false;
-        }
+        for (int item : marks)
+            if (item > 5 || item < 2)
+                return false;
+
         return true;
     }
 

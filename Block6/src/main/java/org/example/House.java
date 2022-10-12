@@ -9,6 +9,12 @@ public class House {
         floorAmount = amount;
     }
 
+    public void setFloorAmount(int floorAmount){
+        if (floorAmount < 0)
+            throw new IllegalArgumentException("floor amount cant be less then 0");
+        this.floorAmount = floorAmount;
+    }
+
     public String toString() {
         if (floorAmount % 10 == 1 && floorAmount % 100 != 11)
             return "дом с " + Integer.toString(floorAmount) + " этажом";

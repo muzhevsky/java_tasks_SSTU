@@ -10,8 +10,14 @@ public class Department {
         this.boss.setDepartment(this);
     }
 
+    public void setBoss(Employee boss){
+        if(boss != null)
+            boss.setDepartment(this);
+        this.boss = boss;
+    }
+
     public String getName(){
-        return new String(name);
+        return name;
     }
     public Employee getBoss(){
         return boss;

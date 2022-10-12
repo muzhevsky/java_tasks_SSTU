@@ -9,21 +9,24 @@ public class Name {
     public Name(String firstname) {
         if (firstname != null && firstname != "")
             this.firstname = firstname;
-        //else ... ну короче обработка неправильных значений какая-то
+        else
+            throw new IllegalArgumentException("firstname is null");
     }
 
     public Name(String firstname, String secondname) {
         this(firstname);
         if (secondname != null && secondname != "")
             this.secondname = secondname;
-        //else ... ну короче обработка неправильных значений какая-то
+        else
+            throw new IllegalArgumentException("secondname is null");
     }
 
     public Name(String firstname, String secondname, String patronymic) {
         this(firstname, secondname);
         if (patronymic != null && patronymic != "")
             this.patronymic = patronymic;
-        //else ... ну короче обработка неправильных значений какая-то
+        else
+            throw new IllegalArgumentException("patronymic is null");
     }
 
     public Name(Name name){
@@ -31,34 +34,17 @@ public class Name {
         this.secondname = name.getSecondname();
         this.patronymic = name.getPatronymic();
     }
-//    public void setFirstname(String firstname) {
-//        if (firstname == null || firstname == "")
-//            throw new IllegalArgumentException("wrong firstname");
-//        this.firstname = new String(firstname);
-//    }
-//
-//    public void setSecondname(String secondname) {
-//        if (secondname == null || secondname == "")
-//            throw new IllegalArgumentException("wrong secondname");
-//        this.secondname = secondname;
-//    }
-//
-//    public void setPatronymic(String patronymic) {
-//        if (patronymic == null || patronymic == "")
-//            throw new IllegalArgumentException("wrong patronymic");
-//        this.patronymic = patronymic;
-//    }
 
     public String getFirstname() {
-        return new String(firstname);
+        return firstname;
     }
 
     public String getSecondname() {
-        return new String(secondname);
+        return secondname;
     }
 
     public String getPatronymic() {
-        return new String(patronymic);
+        return patronymic;
     }
 
     public String toString() {
