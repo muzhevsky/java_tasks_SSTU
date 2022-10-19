@@ -2,15 +2,17 @@ package weapons;
 
 public class Pistol extends Weapon {
 
-    int maxAmmo;
-    public Pistol(){
-        this(5,5);
-    }
-    public Pistol(int ammo){
-        this(ammo,ammo);
+    private int maxAmmo;
+
+    public Pistol() {
+        this(5, 5);
     }
 
-    public Pistol(int ammo, int maxAmmo){
+    public Pistol(int ammo) {
+        this(ammo, ammo);
+    }
+
+    public Pistol(int ammo, int maxAmmo) {
         super(ammo);
         if (maxAmmo < 0)
             throw new IllegalArgumentException("ammo amount cant be less then zero");
@@ -19,15 +21,15 @@ public class Pistol extends Weapon {
     }
 
     @Override
-    public void reload(int ammo){
+    public void reload(int ammo) {
         super.reload(ammo);
-        if(maxAmmo < ammo)
+        if (maxAmmo < ammo)
             ammo = maxAmmo;
     }
 
     @Override
-    public void shoot(){
-        if(ammo > 0){
+    public void shoot() {
+        if (ammo > 0) {
             System.out.println("bah");
             ammo--;
             return;

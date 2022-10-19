@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class Cuckoo extends Bird{
 
+    public Cuckoo(boolean isFlyable, ColorRGB color){
+        super(isFlyable, color);
+    }
     @Override
     public void sing() {
         Random random = new Random();

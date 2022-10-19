@@ -98,9 +98,6 @@ public final class Fraction extends Number {
         }
     }
 
-    public String toString(){
-        return nominator+" / "+denominator;
-    }
 
     @Override
     public int intValue() {
@@ -120,5 +117,9 @@ public final class Fraction extends Number {
     @Override
     public double doubleValue() {
         return (double)nominator/denominator;
+    }
+
+    public String toString(){
+        return nominator+" / "+denominator;
     }
 }
