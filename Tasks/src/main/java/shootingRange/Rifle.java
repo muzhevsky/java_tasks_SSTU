@@ -1,4 +1,4 @@
-package weapons;
+package shootingRange;
 
 public class Rifle extends Pistol{
     final int fireRate;

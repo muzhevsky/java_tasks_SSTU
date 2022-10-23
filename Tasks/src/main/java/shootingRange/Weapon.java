@@ -1,4 +1,4 @@
-package weapons;
+package shootingRange;
 
 public abstract class Weapon {
     protected int ammo;

@@ -1,4 +1,4 @@
-package weapons;
+package shootingRange;
 
 public class Shooter {
     public Weapon weapon;

@@ -3,7 +3,7 @@ import myMath.*;
 import animals.*;
 import townLinks.Town;
 import townLinks.TwoPathTown;
-import weapons.*;
+import shootingRange.*;
 
 
 public class Main {
@@ -21,7 +21,7 @@ public class Main {
         sayMeow(new Cat("barsik"), new Dog());
 
         // TASK 5
-        System.out.println(getLength(new Line(new Point(0,0), new Point(2,3)),
+        System.out.println(getLengthSum(new Line(new Point(0,0), new Point(2,3)),
                                      new Polyline(new Point(0,0), new Point (5,6), new Point(10,20))));
 
         // TASK 6
@@ -32,7 +32,7 @@ public class Main {
         Rectangle rectangle = new Rectangle(new Point (0,0), 10, 5);
         Triangle triangle = new Triangle(new Point (0,0), new Point (0,0), new Point(2,3), new Point(4,5));
 
-        System.out.println(getPolylineSum(square,rectangle,triangle));
+        System.out.println(breakMeEntirely(square,rectangle,triangle));
 
         // TASK 8
         Shooter shooter = new Shooter("Misha");
@@ -66,7 +66,7 @@ public class Main {
         System.out.println(e);
     }
 
-    public static Polyline getPolylineSum (PolylineConvertable...polylines){
+    public static Polyline breakMeEntirely (PolylineConvertable...polylines){
         Polyline result = new Polyline();
 
         for(PolylineConvertable polyline : polylines)
@@ -75,7 +75,7 @@ public class Main {
         return result;
     }
 
-    public static float getLength (Measurable...measurables){
+    public static float getLengthSum(Measurable...measurables){
         float result = 0;
 
         for(Measurable measurable : measurables)
