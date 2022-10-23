@@ -43,8 +43,8 @@ public class Rectangle extends Figure implements PolylineConvertable {
         Point[] points = new Point[]{
                 new Point(topLeftPoint),
                 new Point(topLeftPoint.x+a, topLeftPoint.y),
-                new Point(topLeftPoint.x+a, topLeftPoint.y+b),
-                new Point(topLeftPoint.x, topLeftPoint.y+b)
+                new Point(topLeftPoint.x+a, topLeftPoint.y-b),
+                new Point(topLeftPoint.x, topLeftPoint.y-b)
         };
 
         return new CycledPolyline(points);

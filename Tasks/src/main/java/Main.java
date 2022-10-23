@@ -15,13 +15,14 @@ public class Main {
         allBirdsSing(new Parrot("never gonna give you up, never gonna let you down, never gonna run around, desert you"), new Cuckoo(), new Sparrow());
 
         // TASK 3
-        System.out.println(getSquareSum(new Circle(new Point(0,0),5),new Rectangle(new Point(0,0), 5,4)));
+        System.out.println(getSquareSum(new Circle(new Point(0,0),new Point(0,0), 5),new Rectangle(new Point(0,0), 5,4)));
 
         // TASK 4
         sayMeow(new Cat("barsik"), new Dog());
 
         // TASK 5
-        System.out.println(getLength(new Line(new Point(0,0), new Point(2,3)), new Polyline(new Point(0,0), new Point (5,6), new Point(10,20))));
+        System.out.println(getLength(new Line(new Point(0,0), new Point(2,3)),
+                                     new Polyline(new Point(0,0), new Point (5,6), new Point(10,20))));
 
         // TASK 6
         Square square = new Square(new Point (0,0), 5);
@@ -29,7 +30,7 @@ public class Main {
 
         // TASK 7
         Rectangle rectangle = new Rectangle(new Point (0,0), 10, 5);
-        Triangle triangle = new Triangle(new Point (0,0), new Point(2,3), new Point(4,5));
+        Triangle triangle = new Triangle(new Point (0,0), new Point (0,0), new Point(2,3), new Point(4,5));
 
         System.out.println(getPolylineSum(square,rectangle,triangle));
 

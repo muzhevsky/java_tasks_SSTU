@@ -1,5 +1,6 @@
 package animals;
 
+import colors.ColorRGB;
 import tools.CharManager;
 import tools.Swapper;
 
@@ -9,9 +10,8 @@ import java.util.Random;
 
 public class Parrot extends Bird {
     private String songLyrics;
-    Object c = 5;
-    {
-        System.out.println(c);
+    public Parrot(String songLyrics){
+        this(false, new ColorRGB(0,0,0), songLyrics);
     }
     public Parrot(boolean isFlyable, ColorRGB color, String songLyrics) {
         super(isFlyable, color);
