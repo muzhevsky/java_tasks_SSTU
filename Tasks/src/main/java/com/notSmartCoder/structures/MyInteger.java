@@ -7,7 +7,12 @@ public class MyInteger implements Copyable{
         this.value = value;
     }
     @Override
-    public Copyable getCopy() {
+    public MyInteger getCopy() {
         return new MyInteger(value);
+    }
+
+    @Override
+    public String toString(){
+        return Integer.toString(value);
     }
 }

@@ -3,8 +3,6 @@ package com.notSmartCoder.structures;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Spliterator;
-import java.util.function.Consumer;
 
 public class ImmutableList implements Iterable {
     private final List<Copyable> list;
@@ -17,11 +15,11 @@ public class ImmutableList implements Iterable {
         size = objects.length;
     }
 
-    public Object getItem(int index){
+    public Copyable getItem(int index){
         return list.get(index).getCopy();
     }
 
-    public Object getItems(){
+    public List<Copyable> getItems(){
         List<Copyable> result = new ArrayList<Copyable>();
         for(Copyable obj : list)
             result.add(obj.getCopy());
