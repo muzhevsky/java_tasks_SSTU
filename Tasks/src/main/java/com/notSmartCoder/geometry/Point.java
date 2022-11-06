@@ -18,7 +18,7 @@ public class Point {
     }
 
     @Override
-    public Point clone() {
+    public Object clone() {
         return new Point(x, y);
     }
 }

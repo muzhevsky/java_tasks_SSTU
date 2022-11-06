@@ -128,7 +128,7 @@ public final class Fraction extends Number {
     }
 
     @Override
-    public Fraction clone() {
+    public Object clone() {
         return new Fraction(nominator, denominator);
     }
 

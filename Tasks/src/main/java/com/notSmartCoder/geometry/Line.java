@@ -34,7 +34,7 @@ public class Line implements Measurable, PolylineConvertable {
     }
 
     @Override
-    public Line clone() {
+    public Object clone() {
         return new Line(start, end);
     }
 }

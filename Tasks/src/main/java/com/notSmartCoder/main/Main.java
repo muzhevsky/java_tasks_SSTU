@@ -1,23 +1,17 @@
 package com.notSmartCoder.main;
 
-import com.notSmartCoder.myMath.Fraction;
-import com.notSmartCoder.geometry.Point;
+import com.notSmartCoder.structures.Copyable;
+import com.notSmartCoder.structures.ImmutableList;
+import com.notSmartCoder.structures.MyInteger;
 
 import static java.lang.Double.parseDouble;
 import static java.lang.Math.pow;
 
 public class Main {
     public static void main(String[] args) {
-        //TASK 1
-        System.out.println(new java.math.BigDecimal(Float.toString(sum(7, new Fraction(11, 3), 3.21, new java.math.BigInteger("12345678912345678912")))));
-
-        //TASK 2
-//        System.out.println(myPow(args[0],args[1]));
-
-        //TASK 3
-        Point point = new Point(2, 5);
-        java.awt.Point point1 = new java.awt.Point();
-
+        ImmutableList list = new ImmutableList(new MyInteger(Integer.valueOf(1)),new MyInteger(Integer.valueOf(6)), new MyInteger(Integer.valueOf(2)));
+        for(Object obj : list)
+            System.out.println(obj);
     }
 
     public static float sum(Number... numbers) {
