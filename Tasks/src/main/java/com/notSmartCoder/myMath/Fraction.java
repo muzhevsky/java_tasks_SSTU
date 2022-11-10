@@ -127,9 +127,13 @@ public final class Fraction extends Number {
         return nominator + " / " + denominator;
     }
 
+
+    public Fraction(Fraction fraction){
+        this(fraction.nominator, fraction.denominator);
+    }
     @Override
-    public Object clone() {
-        return new Fraction(nominator, denominator);
+    public Fraction clone() {
+        return new Fraction(this);
     }
 
 }

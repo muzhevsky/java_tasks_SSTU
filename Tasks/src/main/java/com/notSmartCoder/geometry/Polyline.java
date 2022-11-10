@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Polyline implements Measurable, PolylineConvertable {
-    private List<Point> points;
+    private ArrayList<Point> points;
 
     public Polyline(){
         points = new ArrayList<Point>();
@@ -16,12 +16,15 @@ public class Polyline implements Measurable, PolylineConvertable {
         setPoints(points);
     }
 
+
     public void setPoints(Point...points){
         if(points == null)
             throw new IllegalArgumentException("points is null");
 
         this.points = new ArrayList<Point>(Arrays.asList(Arrays.copyOf(points,points.length)));
     }
+
+
 
     public void addPoints(Point...points){
         if(points == null)
@@ -70,5 +73,16 @@ public class Polyline implements Measurable, PolylineConvertable {
         }
 
         return "Line { points = "+pointsString + " }";
+    }
+
+    public Polyline(Polyline line){
+        this();
+        for(Point point : line.points){
+            this.points.add(new Point(point));
+        }
+    }
+    @Override
+    public Polyline clone(){
+        return new Polyline(this);
     }
 }

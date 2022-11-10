@@ -1,17 +1,18 @@
 package com.notSmartCoder.main;
 
-import com.notSmartCoder.structures.Copyable;
-import com.notSmartCoder.structures.ImmutableList;
-import com.notSmartCoder.structures.MyInteger;
+import com.notSmartCoder.fighters.FistPunch;
+import com.notSmartCoder.fighters.Karatist;
+import com.notSmartCoder.fighters.LegPunch;
+import com.notSmartCoder.fighters.JumpPunch;
 
 import static java.lang.Double.parseDouble;
 import static java.lang.Math.pow;
 
 public class Main {
     public static void main(String[] args) {
-        ImmutableList list = new ImmutableList(new MyInteger(Integer.valueOf(1)),new MyInteger(Integer.valueOf(6)), new MyInteger(Integer.valueOf(2)));
-        for(Object obj : list)
-            System.out.println(obj);
+        Karatist daniel = new Karatist("Daniel", new FistPunch(), new LegPunch(), new FistPunch(), new JumpPunch());
+        daniel.addPunch(new FistPunch());
+        daniel.doCombination();
     }
 
     public static float sum(Number... numbers) {
