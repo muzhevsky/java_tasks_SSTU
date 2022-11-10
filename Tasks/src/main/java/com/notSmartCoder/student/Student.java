@@ -1,64 +1,70 @@
 package com.notSmartCoder.student;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Student {
     public String name;
-    private int[] marks;
-    private int actualLength;
+    List<Integer> marks;
 
-    public Student() {
-        name = "";
-        marks = new int[0];
-        actualLength = 0;
+    private MarkChecker markChecker;
+    private Student() {
+        markChecker = new DefaultMarkChecker();
+        marks = new ArrayList<>();
+    }
+
+    public Student(String name){
+        this();
+        if (name == null)
+            throw new IllegalArgumentException("name is null");
+
+        this.name = name;
     }
 
     public Student(String name, int... marks) {
-        if (name == null)
-            throw new IllegalArgumentException("name is null");
-        this.name = name;
-
-        if (marks != null) {
-            if (!isValid(marks))
-                throw new IllegalArgumentException("invalid marks");
-
-            this.marks = Arrays.copyOf(marks, marks.length);
-            actualLength = marks.length;
-        }
+        this(name);
+        addMarks(marks);
     }
 
-    public void setMarks(int... marks) {
-        if (marks != null) {
-            if (!isValid(marks))
-                throw new IllegalArgumentException("invalid marks");
+    public Student(String name, MarkChecker markChecker, int...marks) {
+        this(name);
+        if(markChecker == null)
+            throw new IllegalArgumentException("markChecher is null");
+        this.markChecker = markChecker;
 
-            this.marks = Arrays.copyOf(marks, marks.length);
-            actualLength = marks.length;
-        }
-        else this.marks = new int[0];
+        addMarks(marks);
     }
 
-    public int[] getMarks() {
-        return Arrays.copyOf(marks, marks.length);
+    public ArrayList<Integer> getMarks() {
+        return new ArrayList<>(this.marks);
     }
 
     public void addMarks(int... marks) {
-
+        if (marks == null)
+            throw new IllegalArgumentException("marks is null");
         if (!isValid(marks))
             throw new IllegalArgumentException("invalid marks");
 
-        if (actualLength + marks.length > this.marks.length) {
-            this.marks = Arrays.copyOf(this.marks, this.marks.length * 2);
-        }
 
         for (int item : marks) {
-            this.marks[actualLength++] = item;
+            this.marks.add(item);
+            UndoHandler.addAction(new StudentMarkAddAction(this,item));
         }
+    }
+
+    public void removeMark(int index){
+        if(index >= marks.size())
+            throw new IllegalArgumentException("index is more then list size");
+
+        int value = marks.get(index);
+        marks.remove(index);
+        UndoHandler.addAction(new StudentMarkRemoveAction(this, index, value));
     }
 
     private boolean isValid(int...marks) {
         for (int item : marks)
-            if (item > 5 || item < 2)
+            if (!markChecker.Check(item))
                 return false;
 
         return true;
@@ -67,12 +73,8 @@ public class Student {
     public String toString() {
         String marksString = "";
 
-        if (this.marks.length > 0) {
-            for (int i = 0; i < actualLength - 1; i++)
-                marksString += this.marks[i] + ", ";
-
-            marksString += this.marks[actualLength - 1];
-        }
+        for(Integer mark : marks)
+            marksString += mark.toString() + " ";
 
         return "Student{ name = '" + name + "', marks = [ " + marksString + " ]";
     }

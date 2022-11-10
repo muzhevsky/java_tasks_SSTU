@@ -4,27 +4,36 @@ import com.notSmartCoder.fighters.FistPunch;
 import com.notSmartCoder.fighters.Karatist;
 import com.notSmartCoder.fighters.LegPunch;
 import com.notSmartCoder.fighters.JumpPunch;
+import com.notSmartCoder.structures.Stack;
+import com.notSmartCoder.student.*;
 
 import static java.lang.Double.parseDouble;
 import static java.lang.Math.pow;
 
 public class Main {
     public static void main(String[] args) {
-        Karatist daniel = new Karatist("Daniel", new FistPunch(), new LegPunch(), new FistPunch(), new JumpPunch());
-        daniel.addPunch(new FistPunch());
-        daniel.doCombination();
+        Student vova = new Student("vova", new EvenMarkChecher(), 2,4,6);
+        System.out.println(vova.toString());
+
+        Undo();
+        System.out.println(vova.toString());
+
+        Redo();
+        System.out.println(vova.toString());
+
+        vova.removeMark(0);
+        System.out.println(vova.toString());
+        vova.removeMark(0);
+        System.out.println(vova.toString());
+
+        Redo();
+        System.out.println(vova.toString());
     }
 
-    public static float sum(Number... numbers) {
-        float result = 0;
-
-        for (Number number : numbers)
-            result += number.floatValue();
-
-        return result;
+    public static void Undo(){
+        RedoHandler.addAction(UndoHandler.Undo());
     }
-
-    public static double myPow(String x, String y) {
-        return pow(parseDouble(x), parseDouble(y));
+    public static void Redo(){
+        UndoHandler.addAction(RedoHandler.Redo());
     }
 }
