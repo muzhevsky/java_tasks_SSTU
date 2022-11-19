@@ -1,7 +1,6 @@
 package com.notSmartCoder.student;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Student {
@@ -49,7 +48,7 @@ public class Student {
 
         for (int item : marks) {
             this.marks.add(item);
-            UndoHandler.addAction(new StudentMarkAddAction(this,item));
+            UndoRedoHandler.addUndoAction(new StudentMarkAddAction(this,item));
         }
     }
 
@@ -59,7 +58,14 @@ public class Student {
 
         int value = marks.get(index);
         marks.remove(index);
-        UndoHandler.addAction(new StudentMarkRemoveAction(this, index, value));
+        UndoRedoHandler.addUndoAction(new StudentMarkRemoveAction(this, index, value));
+    }
+
+    public void insertMark(int index){
+        if(index >= marks.size())
+            throw new IllegalArgumentException("index is more then list size");
+
+
     }
 
     private boolean isValid(int...marks) {
