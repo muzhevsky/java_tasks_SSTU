@@ -1,32 +1,22 @@
 package com.notSmartCoder.main;
 
-import com.notSmartCoder.student.EvenMarkChecher;
-import com.notSmartCoder.student.Student;
-import com.notSmartCoder.student.UndoRedoHandler;
+import com.notSmartCoder.animals.Cat;
+import com.notSmartCoder.animals.Meowable;
+import com.notSmartCoder.animals.MeowAlerter;
+import com.notSmartCoder.animals.MeowCounter;
 
 public class Main {
     public static void main(String[] args) {
-        Student vova = new Student("vova", new EvenMarkChecher(), 2,4,6);
-        System.out.println(vova.toString());
+        Cat cat = new Cat("meower");
+        MeowCounter meowCounter = new MeowCounter(cat);
+        MeowAlerter meowAlerter = new MeowAlerter(meowCounter);
+        doMeow(meowAlerter);
+        doMeow(meowAlerter);
+        doMeow(meowAlerter);
+        System.out.println(meowCounter.getCount());
+    }
 
-        UndoRedoHandler.Undo();
-        System.out.println(vova.toString());
-
-        UndoRedoHandler.Redo();
-        System.out.println(vova.toString());
-
-        vova.removeMark(0);
-        System.out.println(vova.toString());
-        vova.removeMark(0);
-        System.out.println(vova.toString());
-
-        UndoRedoHandler.Undo();
-        System.out.println(vova.toString());
-        UndoRedoHandler.Undo();
-        System.out.println(vova.toString());
-        UndoRedoHandler.Redo();
-        System.out.println(vova.toString());
-        UndoRedoHandler.Redo();
-        System.out.println(vova.toString());
+    public static void doMeow(Meowable meowable){
+        meowable.meow();
     }
 }

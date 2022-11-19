@@ -3,11 +3,26 @@ package com.notSmartCoder.fighters;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Karatist {
+public class Karate {
     private String name;
     private List<Punch> punchCombination;
 
-    public Karatist(String name, Punch...combination){
+    public static ArrayList<Punch2<Karate>> punch2Collection = new ArrayList<Punch2<Karate>>();
+
+    static {
+        punch2Collection.add(x -> x.doFistPunch());
+        punch2Collection.add(x -> x.doJumpPunch());
+        punch2Collection.add(x -> x.doLegPunch());
+    }
+
+    public ArrayList<Punch2<Karate>> punch2Combination = new ArrayList<>();
+    public void doPunch2Combination(){
+        for (Punch2<Karate> punch : punch2Combination){
+            punch.Punch(this);
+        }
+    }
+
+    public Karate(String name, Punch...combination){
         if(name == null)
             throw new IllegalArgumentException("name is null");
         this.name = name;

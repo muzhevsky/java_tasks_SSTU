@@ -1,5 +1,5 @@
 package com.notSmartCoder.fighters;
 
 public interface Punch {
-    public void doHit(Karatist karatist);
+    public void doHit(Karate karate);
 }
