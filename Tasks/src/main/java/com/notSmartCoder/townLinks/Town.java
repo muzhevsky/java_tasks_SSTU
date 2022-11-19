@@ -1,6 +1,7 @@
 package com.notSmartCoder.townLinks;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Town {
     private String name;
@@ -71,4 +72,16 @@ public class Town {
         return name + ":\n" + pathsString;
     }
 
+    @Override
+    public final int hashCode() {
+        return Objects.hash(paths);
+    }
+
+    @Override
+    public final boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || !(o instanceof Town)) return false;
+        Town town = (Town) o;
+        return paths.equals(town.paths);
+    }
 }

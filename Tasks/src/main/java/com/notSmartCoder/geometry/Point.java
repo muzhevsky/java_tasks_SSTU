@@ -1,6 +1,7 @@
 package com.notSmartCoder.geometry;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Point{
     public double x;
@@ -39,4 +40,19 @@ public class Point{
         return "Point { x = "+ x +", y = "+ y +" }";
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(o == this) return true;
+        if(o == null) return false;
+        if(o.getClass() != this.getClass()) return false;
+
+        Point point = (Point)o;
+
+        return this.x == point.x && this.y == point.y;
+    }
 }

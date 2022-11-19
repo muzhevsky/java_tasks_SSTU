@@ -3,6 +3,7 @@ package com.notSmartCoder.geometry;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class Polyline implements Measurable, PolylineConvertable {
     private ArrayList<Point> points;
@@ -81,6 +82,20 @@ public class Polyline implements Measurable, PolylineConvertable {
             this.points.add(new Point(point));
         }
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(points);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || !(o instanceof Polyline)) return false;
+        Polyline polyline = (Polyline) o;
+        return Objects.equals(points, polyline.points);
+    }
+
     @Override
     public Polyline clone(){
         return new Polyline(this);

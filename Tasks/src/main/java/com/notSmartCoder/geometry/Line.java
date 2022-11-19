@@ -1,5 +1,7 @@
 package com.notSmartCoder.geometry;
 
+import java.util.Objects;
+
 public class Line implements Measurable, PolylineConvertable {
     private Point start;
     private Point end;
@@ -36,5 +38,19 @@ public class Line implements Measurable, PolylineConvertable {
     @Override
     public Object clone() {
         return new Line(start, end);
+    }
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(start, end);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Line line = (Line) o;
+        return Objects.equals(start, line.start) && Objects.equals(end, line.end);
     }
 }
