@@ -5,9 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Student {
-    public String name;
-    List<Integer> marks;
-
+    private String name;
+    private List<Integer> marks;
     private MarkChecker markChecker;
     private Student() {
         markChecker = new DefaultMarkChecker();
@@ -40,16 +39,19 @@ public class Student {
         return new ArrayList<>(this.marks);
     }
 
+    public int getMarksCount(){
+        return marks.size();
+    }
+
     public void addMarks(int... marks) {
         if (marks == null)
             throw new IllegalArgumentException("marks is null");
         if (!isValid(marks))
             throw new IllegalArgumentException("invalid marks");
 
-
         for (int item : marks) {
             this.marks.add(item);
-            UndoHandler.addAction(new StudentMarkAddAction(this,item));
+            UndoHandler.getInstance().addAction(new StudentMarkAddAction(this,item));
         }
     }
 
@@ -59,7 +61,11 @@ public class Student {
 
         int value = marks.get(index);
         marks.remove(index);
-        UndoHandler.addAction(new StudentMarkRemoveAction(this, index, value));
+        UndoHandler.getInstance().addAction(new StudentMarkRemoveAction(this, index, value));
+    }
+
+    public String getName(){
+        return name;
     }
 
     private boolean isValid(int...marks) {
@@ -78,4 +84,56 @@ public class Student {
 
         return "Student{ name = '" + name + "', marks = [ " + marksString + " ]";
     }
+
+    abstract class StudentAction implements Action{
+        protected Student student;
+        public StudentAction(){
+
+        }
+        public StudentAction(Student student){
+            if (student == null)
+                throw new IllegalArgumentException("student is null");
+
+            this.student = student;
+        }
+    }
+
+    class StudentMarkAddAction extends StudentAction{
+        private int markValue;
+        public StudentMarkAddAction(Student student, int markIndex){
+            super(student);
+            this.markValue = markIndex;
+        }
+
+        @Override
+        public void Undo() {
+            student.marks.remove(student.marks.size()-1);
+        }
+
+        @Override
+        public void Redo() {
+            student.marks.add(markValue);
+        }
+    }
+
+    public class StudentMarkRemoveAction extends StudentAction {
+        private int markIndex;
+        private int markValue;
+        public StudentMarkRemoveAction(Student student, int markIndex, int markValue){
+            super(student);
+            this.markIndex = markIndex;
+            this.markValue = markValue;
+        }
+
+        @Override
+        public void Undo() {
+            student.marks.add(markIndex, markValue);
+        }
+
+        @Override
+        public void Redo() {
+            student.marks.remove(markIndex);
+        }
+    }
+
 }

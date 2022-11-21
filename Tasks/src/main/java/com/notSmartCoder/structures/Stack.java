@@ -14,10 +14,14 @@ public class Stack<T> {
     }
 
     public T pop(){
-        if(nextPosition <= 1)
+        if(nextPosition < 1)
             throw new RuntimeException("Stack is empty");
 
         return (T)values[--nextPosition];
     }
 
+    public void clear(){
+        values = new Object[32];
+        nextPosition = 0;
+    }
 }
