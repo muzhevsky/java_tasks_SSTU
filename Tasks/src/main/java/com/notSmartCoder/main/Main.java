@@ -1,19 +1,17 @@
 package com.notSmartCoder.main;
 
-import com.notSmartCoder.animals.Cat;
 import com.notSmartCoder.animals.Meowable;
-import com.notSmartCoder.animals.MeowAlerter;
-import com.notSmartCoder.animals.MeowCounter;
+import com.notSmartCoder.test.Converter;
+import com.notSmartCoder.test.FileStringReader;
+import com.notSmartCoder.test.IntegerSenderToConsole;
+import com.notSmartCoder.test.StringToIntegerHandler;
 
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat("meower");
-        MeowCounter meowCounter = new MeowCounter(cat);
-        MeowAlerter meowAlerter = new MeowAlerter(meowCounter);
-        doMeow(meowAlerter);
-        doMeow(meowAlerter);
-        doMeow(meowAlerter);
-        System.out.println(meowCounter.getCount());
+        Converter<String,Integer> converter = new Converter<>();
+        converter.doSomeMagic(new FileStringReader("asd"),
+                              new StringToIntegerHandler(),
+                              new IntegerSenderToConsole());
     }
 
     public static void doMeow(Meowable meowable){
