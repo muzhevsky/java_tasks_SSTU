@@ -1,12 +1,19 @@
 package com.notSmartCoder.student;
 
 public class UndoHandler extends ActionsHandler {
-    public Action Undo(){
+    private static UndoHandler instance;
+    public static UndoHandler getInstance(){
+        if(instance == null)
+            instance = new UndoHandler();
+
+        return instance;
+    }
+    private UndoHandler(){
+
+    }
+    public void Undo(){
         Action action = actions.pop();
         action.Undo();
-        return action;
-    }
-    public void addAction(Action action){
-        actions.push(action);
+        RedoHandler.getInstance().addAction(action);
     }
 }

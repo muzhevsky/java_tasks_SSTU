@@ -24,7 +24,7 @@ public class Stack<T> {
     }
 
     public void clear(){
-        Object[] values = new Object[32];
+        values = new Object[32];
         nextPosition = 0;
     }
 }

@@ -1,12 +1,22 @@
 package com.notSmartCoder.student;
 
+import com.notSmartCoder.structures.Stack;
+
 public class RedoHandler extends ActionsHandler{
-    public Action Redo(){
+    private static RedoHandler instance;
+    public static RedoHandler getInstance(){
+        if(instance == null)
+            instance = new RedoHandler();
+
+        return instance;
+    }
+
+    public RedoHandler(){
+
+    }
+    public void Redo(){
         Action action = actions.pop();
         action.Redo();
-        return action;
-    }
-    public void addAction(Action action){
-        actions.push(action);
+        UndoHandler.getInstance().addAction(action);
     }
 }
