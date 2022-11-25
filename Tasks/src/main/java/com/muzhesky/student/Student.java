@@ -1,5 +1,7 @@
 package com.muzhesky.student;
 
+import save.SaveObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,11 +9,12 @@ public class Student {
     private String name;
     private List<Integer> marks;
     private MarkChecker markChecker;
+
+    // Constructors
     private Student() {
         markChecker = new DefaultMarkChecker();
         marks = new ArrayList<>();
     }
-
     public Student(String name){
         this();
         if (name == null)
@@ -19,12 +22,10 @@ public class Student {
 
         this.name = name;
     }
-
     public Student(String name, int... marks) {
         this(name);
         addMarks(marks);
     }
-
     public Student(String name, MarkChecker markChecker, int...marks) {
         this(name);
         if(markChecker == null)
@@ -33,6 +34,18 @@ public class Student {
 
         addMarks(marks);
     }
+    public Student(String name, MarkChecker markChecker, List<Integer>marks){
+        this(name);
+        if(markChecker == null)
+            throw new IllegalArgumentException("markChecher is null");
+        this.markChecker = markChecker;
+
+        this.marks = new ArrayList<>(marks);
+    }
+    public Student(Student student){
+        this(student.name, student.markChecker, student.marks);
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public ArrayList<Integer> getMarks() {
         return new ArrayList<>(this.marks);
@@ -84,6 +97,22 @@ public class Student {
         return "Student{ name = '" + name + "', marks = [ " + marksString + " ]";
     }
 
+    // Inner classes
+    public class StudentSave implements SaveObject<Student> {
+        private String name;
+        private List<Integer> marks;
+        private MarkChecker markChecker;
+        public StudentSave(){
+            name = Student.this.name;
+            marks = new ArrayList<>(Student.this.marks);
+            markChecker = Student.this.markChecker;
+        }
+
+        @Override
+        public Student load() {
+            return new Student(name, markChecker, marks);
+        }
+    }
     abstract class StudentAction implements Action{
         protected Student student;
         public StudentAction(){
@@ -96,8 +125,7 @@ public class Student {
             this.student = student;
         }
     }
-
-    class StudentMarkAddAction extends StudentAction{
+    public class StudentMarkAddAction extends StudentAction{
         private int markValue;
         public StudentMarkAddAction(Student student, int markIndex){
             super(student);
@@ -114,7 +142,6 @@ public class Student {
             student.marks.add(markValue);
         }
     }
-
     public class StudentMarkRemoveAction extends StudentAction {
         private int markIndex;
         private int markValue;
@@ -134,5 +161,5 @@ public class Student {
             student.marks.remove(markIndex);
         }
     }
-
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }

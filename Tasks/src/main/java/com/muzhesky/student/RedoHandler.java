@@ -17,4 +17,8 @@ public class RedoHandler extends ActionsHandler{
         action.Redo();
         UndoHandler.getInstance().addAction(action);
     }
+
+    public void clear(){
+        actions.clear();
+    }
 }
