@@ -1,6 +1,4 @@
-package save;
-
-import com.muzhesky.student.Student;
+package com.muzhesky.save;
 
 import java.util.ArrayList;
 import java.util.List;

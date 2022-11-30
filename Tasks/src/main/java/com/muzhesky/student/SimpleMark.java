@@ -1,9 +1,17 @@
 package com.muzhesky.student;
 
 public class SimpleMark implements Mark{
-    public int value;
+    private int value;
+    public SimpleMark(int value){
+        this.value = value;
+    }
     @Override
-    public int getValue() {
-        return value;
+    public double getValue() {
+        return (double)value;
+    }
+
+    @Override
+    public String toString(){
+        return Integer.toString(value);
     }
 }

@@ -1,20 +1,24 @@
 package com.muzhesky.main;
 
-import com.muzhesky.animals.Meowable;
-import com.muzhesky.converter.Converter;
-import com.muzhesky.converter.FileStringReader;
-import com.muzhesky.converter.IntegerWriterToConsole;
-import com.muzhesky.converter.StringToIntegerHandler;
-import com.muzhesky.student.Student;
-import com.muzhesky.student.UndoHandler;
-import save.SaveHandler;
+import com.muzhesky.test.Red;
+import com.muzhesky.test.TrafficLight;
 
 public class Main {
     public static void main(String[] args) {
 
-    }
+        TrafficLight tl = new TrafficLight(new Red());
 
-    public static void doMeow(Meowable meowable){
-        meowable.meow();
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
+        System.out.println(tl.next());
     }
 }

@@ -1,6 +1,6 @@
 package com.muzhesky.student;
 
-import save.SaveObject;
+import com.muzhesky.save.SaveObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,10 +10,18 @@ public class Student {
     private List<Integer> marks;
     private MarkChecker markChecker;
 
+    private List<Mark> marks_2;
+
     // Constructors
     private Student() {
         markChecker = new DefaultMarkChecker();
         marks = new ArrayList<>();
+    }
+    public Student(String name, Mark...marks){
+        this(name);
+        marks_2 = new ArrayList<>();
+        for(Mark mark : marks)
+            marks_2.add(mark);
     }
     public Student(String name){
         this();
@@ -46,6 +54,16 @@ public class Student {
         this(student.name, student.markChecker, student.marks);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public double getAverageMark(){
+        double average = 0;
+        for(Mark mark : marks_2)
+            average += mark.getValue();
+
+        average /= marks_2.size();
+
+        return average;
+    }
 
     public ArrayList<Integer> getMarks() {
         return new ArrayList<>(this.marks);
