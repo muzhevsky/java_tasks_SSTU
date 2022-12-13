@@ -1,24 +1,14 @@
 package com.muzhesky.main;
 
-import com.muzhesky.test.Red;
-import com.muzhesky.test.TrafficLight;
+import com.muzhesky.database.Connection;
+import com.muzhesky.security.*;
+import com.muzhesky.security.Security;
 
 public class Main {
     public static void main(String[] args) {
+        Connection con = null;
 
-        TrafficLight tl = new TrafficLight(new Red());
-
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
-        System.out.println(tl.next());
+        for(int i = 0; i < 5; i++)
+            con = Connection.getNewConnection();
     }
 }
