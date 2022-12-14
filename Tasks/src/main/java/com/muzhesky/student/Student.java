@@ -9,8 +9,8 @@ public class Student {
     private String name;
     private List<Integer> marks;
     private MarkChecker markChecker;
-
     private List<Mark> marks_2;
+    private String diplomNumber;
 
     // Constructors
     private Student() {

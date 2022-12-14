@@ -1,14 +1,17 @@
 package com.muzhesky.main;
 
-import com.muzhesky.database.Connection;
-import com.muzhesky.security.*;
-import com.muzhesky.security.Security;
+import com.muzhesky.connection.Connection;
 
 public class Main {
     public static void main(String[] args) {
-        Connection con = null;
+        Connection connection = null;
 
-        for(int i = 0; i < 5; i++)
-            con = Connection.getNewConnection();
+        for(int i = 0; i < Connection.maxConnectionAmount; i++){
+            connection = Connection.getNewConnection();
+            System.out.println(connection.getValue());
+        }
+
+        connection.close();
+        System.out.println(connection.getValue());
     }
 }
