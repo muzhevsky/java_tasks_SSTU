@@ -1,4 +1,4 @@
-package com.muzhesky.student;
+package com.muzhesky.student.undoRedo;
 
 public class RedoHandler extends ActionsHandler{
     private static RedoHandler instance;

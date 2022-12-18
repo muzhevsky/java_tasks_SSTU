@@ -1,4 +1,4 @@
-package com.muzhesky.student;
+package com.muzhesky.student.undoRedo;
 
 import com.muzhesky.structures.Stack;
 

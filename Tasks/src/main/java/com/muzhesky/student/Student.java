@@ -1,6 +1,13 @@
 package com.muzhesky.student;
 
 import com.muzhesky.save.SaveObject;
+import com.muzhesky.student.diplom.DiplomGenerator;
+import com.muzhesky.student.diplom.StudentDismissalChecker;
+import com.muzhesky.student.marks.DefaultMarkChecker;
+import com.muzhesky.student.marks.Mark;
+import com.muzhesky.student.marks.MarkChecker;
+import com.muzhesky.student.undoRedo.Action;
+import com.muzhesky.student.undoRedo.UndoHandler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -94,6 +101,18 @@ public class Student {
         UndoHandler.getInstance().addAction(new StudentMarkRemoveAction(this, index, value));
     }
 
+    public boolean Dismiss(StudentDismissalChecker...checks){
+        if(diplomNumber != null)
+            return false; // student is already dismissed
+
+        for(StudentDismissalChecker checker : checks)
+            if(!checker.checkStudent(this))
+                return false;
+
+        diplomNumber = new DiplomGenerator().GetDiplomNumber(this);
+        return true;
+    }
+
     public String getName(){
         return name;
     }
@@ -131,7 +150,7 @@ public class Student {
             return new Student(name, markChecker, marks);
         }
     }
-    abstract class StudentAction implements Action{
+    abstract class StudentAction implements Action {
         protected Student student;
         public StudentAction(){
 

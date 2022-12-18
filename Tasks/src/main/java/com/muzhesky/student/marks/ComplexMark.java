@@ -1,4 +1,4 @@
-package com.muzhesky.student;
+package com.muzhesky.student.marks;
 
 import java.util.ArrayList;
 import java.util.List;

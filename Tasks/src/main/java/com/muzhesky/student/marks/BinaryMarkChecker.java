@@ -1,4 +1,4 @@
-package com.muzhesky.student;
+package com.muzhesky.student.marks;
 
 public class BinaryMarkChecker implements MarkChecker{
 

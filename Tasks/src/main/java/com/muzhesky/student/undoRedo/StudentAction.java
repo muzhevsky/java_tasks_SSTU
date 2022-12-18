@@ -1,4 +1,6 @@
-package com.muzhesky.student;
+package com.muzhesky.student.undoRedo;
+
+import com.muzhesky.student.Student;
 
 abstract class StudentAction implements Action{
     protected Student student;
