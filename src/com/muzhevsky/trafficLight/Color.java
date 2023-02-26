@@ -8,7 +8,7 @@ public class Color {
     public static final Color GREEN;
     public static final Color BLACK;
 
-    static{
+    static {
         RED = new Color("red");
         GREEN = new Color("green");
         BLACK = new Color("black");
@@ -18,16 +18,16 @@ public class Color {
         GREEN.next = RED;
     }
 
-    private Color(String value){
+    private Color(String value) {
         this.value = value;
     }
 
-    public Color next(){
+    public Color next() {
         return next;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return value;
     }
 }

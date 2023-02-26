@@ -24,47 +24,53 @@ public class Student {
         markChecker = new DefaultMarkChecker();
         marks = new ArrayList<>();
     }
-    public Student(String name, Mark...marks){
+
+    public Student(String name, Mark... marks) {
         this(name);
         marks_2 = new ArrayList<>();
-        for(Mark mark : marks)
+        for (Mark mark : marks)
             marks_2.add(mark);
     }
-    public Student(String name){
+
+    public Student(String name) {
         this();
         if (name == null)
             throw new IllegalArgumentException("name is null");
 
         this.name = name;
     }
+
     public Student(String name, int... marks) {
         this(name);
         addMarks(marks);
     }
-    public Student(String name, MarkChecker markChecker, int...marks) {
+
+    public Student(String name, MarkChecker markChecker, int... marks) {
         this(name);
-        if(markChecker == null)
+        if (markChecker == null)
             throw new IllegalArgumentException("markChecher is null");
         this.markChecker = markChecker;
 
         addMarks(marks);
     }
-    public Student(String name, MarkChecker markChecker, List<Integer>marks){
+
+    public Student(String name, MarkChecker markChecker, List<Integer> marks) {
         this(name);
-        if(markChecker == null)
+        if (markChecker == null)
             throw new IllegalArgumentException("markChecher is null");
         this.markChecker = markChecker;
 
         this.marks = new ArrayList<>(marks);
     }
-    public Student(Student student){
+
+    public Student(Student student) {
         this(student.name, student.markChecker, student.marks);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public double getAverageMark(){
+    public double getAverageMark() {
         double average = 0;
-        for(Mark mark : marks_2)
+        for (Mark mark : marks_2)
             average += mark.getValue();
 
         average /= marks_2.size();
@@ -76,7 +82,7 @@ public class Student {
         return new ArrayList<>(this.marks);
     }
 
-    public int getMarksCount(){
+    public int getMarksCount() {
         return marks.size();
     }
 
@@ -88,12 +94,12 @@ public class Student {
 
         for (int item : marks) {
             this.marks.add(item);
-            UndoHandler.getInstance().addAction(new StudentMarkAddAction(this,item));
+            UndoHandler.getInstance().addAction(new StudentMarkAddAction(this, item));
         }
     }
 
-    public void removeMark(int index){
-        if(index >= marks.size())
+    public void removeMark(int index) {
+        if (index >= marks.size())
             throw new IllegalArgumentException("index is more then list size");
 
         int value = marks.get(index);
@@ -101,23 +107,23 @@ public class Student {
         UndoHandler.getInstance().addAction(new StudentMarkRemoveAction(this, index, value));
     }
 
-    public boolean Dismiss(StudentDismissalChecker...checks){
-        if(diplomNumber != null)
+    public boolean Dismiss(StudentDismissalChecker... checks) {
+        if (diplomNumber != null)
             return false; // student is already dismissed
 
-        for(StudentDismissalChecker checker : checks)
-            if(!checker.checkStudent(this))
+        for (StudentDismissalChecker checker : checks)
+            if (!checker.checkStudent(this))
                 return false;
 
         diplomNumber = new DiplomGenerator().GetDiplomNumber(this);
         return true;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    private boolean isValid(int...marks) {
+    private boolean isValid(int... marks) {
         for (int item : marks)
             if (!markChecker.Check(item))
                 return false;
@@ -128,7 +134,7 @@ public class Student {
     public String toString() {
         String marksString = "";
 
-        for(Integer mark : marks)
+        for (Integer mark : marks)
             marksString += mark.toString() + " ";
 
         return "Student{ name = '" + name + "', marks = [ " + marksString + " ]";
@@ -139,7 +145,8 @@ public class Student {
         private String name;
         private List<Integer> marks;
         private MarkChecker markChecker;
-        public StudentSave(){
+
+        public StudentSave() {
             name = Student.this.name;
             marks = new ArrayList<>(Student.this.marks);
             markChecker = Student.this.markChecker;
@@ -150,28 +157,33 @@ public class Student {
             return new Student(name, markChecker, marks);
         }
     }
+
     abstract class StudentAction implements Action {
         protected Student student;
-        public StudentAction(){
+
+        public StudentAction() {
 
         }
-        public StudentAction(Student student){
+
+        public StudentAction(Student student) {
             if (student == null)
                 throw new IllegalArgumentException("student is null");
 
             this.student = student;
         }
     }
-    public class StudentMarkAddAction extends StudentAction{
+
+    public class StudentMarkAddAction extends StudentAction {
         private int markValue;
-        public StudentMarkAddAction(Student student, int markIndex){
+
+        public StudentMarkAddAction(Student student, int markIndex) {
             super(student);
             this.markValue = markIndex;
         }
 
         @Override
         public void Undo() {
-            student.marks.remove(student.marks.size()-1);
+            student.marks.remove(student.marks.size() - 1);
         }
 
         @Override
@@ -179,10 +191,12 @@ public class Student {
             student.marks.add(markValue);
         }
     }
+
     public class StudentMarkRemoveAction extends StudentAction {
         private int markIndex;
         private int markValue;
-        public StudentMarkRemoveAction(Student student, int markIndex, int markValue){
+
+        public StudentMarkRemoveAction(Student student, int markIndex, int markValue) {
             super(student);
             this.markIndex = markIndex;
             this.markValue = markValue;

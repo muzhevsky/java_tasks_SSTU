@@ -1,6 +1,6 @@
 package com.muzhevsky.student.marks;
 
-public class BinaryMarkChecker implements MarkChecker{
+public class BinaryMarkChecker implements MarkChecker {
 
     @Override
     public boolean Check(int mark) {

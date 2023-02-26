@@ -7,77 +7,76 @@ import java.util.Objects;
 public class Polyline implements Measurable, PolylineConvertable {
     private ArrayList<Point> points;
 
-    public Polyline(){
+    public Polyline() {
         points = new ArrayList<Point>();
     }
 
-    public Polyline(Point...points){
+    public Polyline(Point... points) {
         this();
         setPoints(points);
     }
 
 
-    public void setPoints(Point...points){
-        if(points == null)
+    public void setPoints(Point... points) {
+        if (points == null)
             throw new IllegalArgumentException("points is null");
 
-        this.points = new ArrayList<Point>(Arrays.asList(Arrays.copyOf(points,points.length)));
+        this.points = new ArrayList<Point>(Arrays.asList(Arrays.copyOf(points, points.length)));
     }
 
 
-
-    public void addPoints(Point...points){
-        if(points == null)
+    public void addPoints(Point... points) {
+        if (points == null)
             throw new IllegalArgumentException("points is null");
 
-        for(Point point : points){
-            if(point != null)
+        for (Point point : points) {
+            if (point != null)
                 this.points.add(new Point(point));
         }
     }
 
-    public void addPoints(Polyline polyline){
-        if(polyline == null)
+    public void addPoints(Polyline polyline) {
+        if (polyline == null)
             throw new IllegalArgumentException("polyline is null");
 
-        for(Point point : polyline.getPoints()){
-            if(point != null)
+        for (Point point : polyline.getPoints()) {
+            if (point != null)
                 this.points.add(new Point(point));
         }
     }
 
-    public ArrayList<Point> getPoints(){
+    public ArrayList<Point> getPoints() {
         return new ArrayList<Point>(points);
     }
 
-    public double length(){
+    public double length() {
         double result = 0;
 
-        for(int i = 0; i < points.size()-1; i++){
+        for (int i = 0; i < points.size() - 1; i++) {
             Point start = points.get(i);
-            Point end = points.get(i+1);
-            result += Math.sqrt(Math.pow(start.x-end.x,2)+Math.pow(start.y-end.y,2));
+            Point end = points.get(i + 1);
+            result += Math.sqrt(Math.pow(start.x - end.x, 2) + Math.pow(start.y - end.y, 2));
         }
 
         return result;
     }
 
-    public Polyline getPolyline(){
+    public Polyline getPolyline() {
         return this;
     }
 
-    public String toString(){
+    public String toString() {
         String pointsString = "";
-        for(Point point : points){
+        for (Point point : points) {
             pointsString += point.toString() + " ";
         }
 
-        return "Line { points = "+pointsString + " }";
+        return "Line { points = " + pointsString + " }";
     }
 
-    public Polyline(Polyline line){
+    public Polyline(Polyline line) {
         this();
-        for(Point point : line.points){
+        for (Point point : line.points) {
             this.points.add(new Point(point));
         }
     }
@@ -96,7 +95,7 @@ public class Polyline implements Measurable, PolylineConvertable {
     }
 
     @Override
-    public Polyline clone(){
+    public Polyline clone() {
         return new Polyline(this);
     }
 }

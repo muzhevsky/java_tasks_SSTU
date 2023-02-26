@@ -42,9 +42,9 @@ public class Rectangle extends Figure implements PolylineConvertable {
     public Polyline getPolyline() {
         Point[] points = new Point[]{
                 new Point(topLeftPoint),
-                new Point(topLeftPoint.x+a, topLeftPoint.y),
-                new Point(topLeftPoint.x+a, topLeftPoint.y-b),
-                new Point(topLeftPoint.x, topLeftPoint.y-b)
+                new Point(topLeftPoint.x + a, topLeftPoint.y),
+                new Point(topLeftPoint.x + a, topLeftPoint.y - b),
+                new Point(topLeftPoint.x, topLeftPoint.y - b)
         };
 
         return new CycledPolyline(points);

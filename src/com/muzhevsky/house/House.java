@@ -9,7 +9,7 @@ public class House {
         floorAmount = amount;
     }
 
-    public void setFloorAmount(int floorAmount){
+    public void setFloorAmount(int floorAmount) {
         if (floorAmount < 0)
             throw new IllegalArgumentException("floor amount cant be less then 0");
         this.floorAmount = floorAmount;

@@ -7,7 +7,7 @@ public class MyInteger implements Copyable {
         this.value = value;
     }
 
-    public void identityMethod(){
+    public void identityMethod() {
         System.out.println(this.getClass().toString() + " " + value);
     }
 

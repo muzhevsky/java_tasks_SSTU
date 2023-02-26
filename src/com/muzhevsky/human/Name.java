@@ -29,7 +29,7 @@ public class Name {
             throw new IllegalArgumentException("patronymic is null");
     }
 
-    public Name(Name name){
+    public Name(Name name) {
         this.firstname = name.getFirstname();
         this.secondname = name.getSecondname();
         this.patronymic = name.getPatronymic();

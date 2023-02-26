@@ -128,9 +128,10 @@ public final class Fraction extends Number {
     }
 
 
-    public Fraction(Fraction fraction){
+    public Fraction(Fraction fraction) {
         this(fraction.nominator, fraction.denominator);
     }
+
     @Override
     public Fraction clone() {
         return new Fraction(this);

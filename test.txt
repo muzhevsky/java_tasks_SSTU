@@ -1,0 +1,1 @@
+com.muzhevsky.reflection.utils.Parent(someClass=com.muzhevsky.reflection.utils.test.SomeClass(text=asd;);text=1251252;testInt=12;)

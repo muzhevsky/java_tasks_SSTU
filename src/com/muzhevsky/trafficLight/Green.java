@@ -3,7 +3,7 @@ package com.muzhevsky.trafficLight;
 public class Green implements Colorable {
     public static final Green value = new Green();
 
-    private Green(){
+    private Green() {
 
     }
 

@@ -4,7 +4,7 @@ public class Black implements Colorable {
     public static final Black value = new Black();
 
 
-    private Black(){
+    private Black() {
 
     }
 

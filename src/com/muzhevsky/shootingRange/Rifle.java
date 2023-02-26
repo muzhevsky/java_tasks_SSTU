@@ -1,17 +1,19 @@
 package com.muzhevsky.shootingRange;
 
-public class Rifle extends Pistol{
+public class Rifle extends Pistol {
     final int fireRate;
 
-    public Rifle(){
+    public Rifle() {
         super(10);
         fireRate = 10;
     }
-    public Rifle(int maxAmmo){
+
+    public Rifle(int maxAmmo) {
         super(maxAmmo);
-        fireRate = maxAmmo/2;
+        fireRate = maxAmmo / 2;
     }
-    public Rifle(int maxAmmo, int fireRate){
+
+    public Rifle(int maxAmmo, int fireRate) {
         super(maxAmmo);
         if (fireRate < 0)
             throw new IllegalArgumentException("firerate cannot be less then zero");
@@ -19,13 +21,13 @@ public class Rifle extends Pistol{
     }
 
     @Override
-    public void shoot(){
-        for(int i = 0; i < fireRate; i++)
+    public void shoot() {
+        for (int i = 0; i < fireRate; i++)
             super.shoot();
     }
 
-    public void shoot(int seconds){
-        for(; seconds > 0; seconds--)
+    public void shoot(int seconds) {
+        for (; seconds > 0; seconds--)
             shoot();
     }
 }

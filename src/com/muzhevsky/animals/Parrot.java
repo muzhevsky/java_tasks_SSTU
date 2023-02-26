@@ -10,9 +10,11 @@ import java.util.Random;
 
 public class Parrot extends Bird {
     private String songLyrics;
-    public Parrot(String songLyrics){
-        this(false, new ColorRGB(0,0,0), songLyrics);
+
+    public Parrot(String songLyrics) {
+        this(false, new ColorRGB(0, 0, 0), songLyrics);
     }
+
     public Parrot(boolean isFlyable, ColorRGB color, String songLyrics) {
         super(isFlyable, color);
         Character[] characterArray = CharManager.stringToCharacter(songLyrics);

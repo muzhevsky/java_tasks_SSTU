@@ -1,6 +1,6 @@
 package com.muzhevsky.feature;
 
-public enum FeatureType{
+public enum FeatureType {
     X,
     Y,
     Z,

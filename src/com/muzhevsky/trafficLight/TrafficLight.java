@@ -3,13 +3,13 @@ package com.muzhevsky.trafficLight;
 public class TrafficLight {
     private Color currentColor;
 
-    public TrafficLight(Color color){
+    public TrafficLight(Color color) {
         this();
-        if(currentColor != null)
+        if (currentColor != null)
             currentColor = color;
     }
 
-    public TrafficLight(){
+    public TrafficLight() {
         currentColor = Color.BLACK;
     }
 

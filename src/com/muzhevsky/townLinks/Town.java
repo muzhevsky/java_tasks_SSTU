@@ -24,42 +24,42 @@ public class Town {
     public Town(String name, ArrayList<Path> paths) {
         this(name);
 
-        if(paths == null)
+        if (paths == null)
             throw new IllegalArgumentException("paths are null");
         this.paths = new ArrayList<Path>(paths);
     }
 
     public void addPath(Town linkedTown, int moveCost) {
-        Path newPath = new Path(linkedTown,moveCost);
-        if(!pathsContains(newPath))
+        Path newPath = new Path(linkedTown, moveCost);
+        if (!pathsContains(newPath))
             paths.add(newPath);
     }
 
-    public void addPaths(Path...paths) {
+    public void addPaths(Path... paths) {
         if (paths == null)
             throw new IllegalArgumentException("cannot add null path");
 
-        for(Path path : paths)
-            if(!pathsContains(path)){
-                addPath(path.getDestinationTown(),path.getMoveCost());
+        for (Path path : paths)
+            if (!pathsContains(path)) {
+                addPath(path.getDestinationTown(), path.getMoveCost());
             }
     }
 
-    public void removePath(Path path){
-        for(Path item : paths){
-            if(path.getDestinationTown() == item.getDestinationTown())
+    public void removePath(Path path) {
+        for (Path item : paths) {
+            if (path.getDestinationTown() == item.getDestinationTown())
                 paths.remove(item);
         }
     }
 
-    boolean pathsContains(Path path){
-        for(Path item : paths)
-            if(path.getDestinationTown() == item.getDestinationTown()) return true;
+    boolean pathsContains(Path path) {
+        for (Path item : paths)
+            if (path.getDestinationTown() == item.getDestinationTown()) return true;
 
         return false;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 

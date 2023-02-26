@@ -1,12 +1,14 @@
 package com.muzhevsky.converter;
 
-public class FileStringReader implements Reader<String>{
+public class FileStringReader implements Reader<String> {
     String result;
-    public FileStringReader(String path){
+
+    public FileStringReader(String path) {
         /*path*/
         result = "123";
     }
-    public String read(){
+
+    public String read() {
         return result;
     }
 }

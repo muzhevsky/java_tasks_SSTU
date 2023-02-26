@@ -4,8 +4,102 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f192a617-12b8-4f56-9692-f9fbb1fcdab6" name="Changes" comment="">
+    <list default="true" id="8fdcd14d-2e81-4221-8a86-6741580b27b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/Java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/Java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/Java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/Java/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/Java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/Java/com/com.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/Java/java_tasks_SSTU.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/animals/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/animals/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/animals/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/animals/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/animals/Cuckoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/animals/Cuckoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/animals/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/animals/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/animals/MeowCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/animals/MeowCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/animals/Parrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/animals/Parrot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/animals/Sparrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/animals/Sparrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/colors/ColorRGB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/colors/ColorRGB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/connection/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/connection/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/converter/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/converter/FileByteReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/converter/FileByteReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/converter/FileStringReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/converter/FileStringReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/converter/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/converter/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/converter/StringToIntegerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/converter/StringToIntegerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/dateTime/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/dateTime/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/feature/Feature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/feature/Feature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/feature/FeatureType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/feature/FeatureType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/fighters/FistPunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/fighters/FistPunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/fighters/JumpPunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/fighters/JumpPunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/fighters/Karate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/fighters/Karate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/fighters/LegPunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/fighters/LegPunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/fighters/PunchType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/fighters/PunchType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/geometry/CycledPolyline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/geometry/CycledPolyline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Polyline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Polyline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/geometry/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/house/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/house/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/human/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/human/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/human/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/human/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/myMath/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/myMath/Fraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/MsonHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/MsonHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/MsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/MsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/MsonWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/MsonWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/MyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/test/SomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/test/SomeClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/test/SomeClassTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/test/SomeClassTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/test/ValidateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/reflection/utils/test/ValidateException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/save/SaveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/save/SaveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/security/Security.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/security/Security.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/security/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/security/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/security/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/security/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/shareBots/DefaultTradeBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/shareBots/DefaultTradeBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/shootingRange/Rifle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/shootingRange/Rifle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/shootingRange/Shooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/shootingRange/Shooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/structures/MyInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/structures/MyInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/structures/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/structures/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/diplom/DiplomGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/diplom/DiplomGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/BinaryMarkChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/BinaryMarkChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/ComplexMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/ComplexMark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/DefaultMarkChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/DefaultMarkChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/EvenMarkChecher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/EvenMarkChecher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/SimpleMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/marks/SimpleMark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/ActionsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/ActionsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/RedoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/RedoHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/StudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/StudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/UndoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/student/undoRedo/UndoHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/tools/Swapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/tools/Swapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/townLinks/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/townLinks/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/townLinks/Town.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/townLinks/Town.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/townLinks/TwoPathTown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/townLinks/TwoPathTown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/Black.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/Black.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/Green.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/Green.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/Red.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/TrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/trafficLight/TrafficLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_tasks_SSTU.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +118,13 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectId" id="2FQl1TeoaP37ZQyCsx8FWbLNA6B" />
+  <component name="ProjectId" id="2MH8uJWZJezmkzqs3CtOarBQl7V" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,39 +133,29 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/Projects/Java/Tasks/java_tasks_SSTU/src"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "E:/Projects/Java/SSTU Tasks",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f192a617-12b8-4f56-9692-f9fbb1fcdab6" name="Changes" comment="" />
-      <created>1664431975933</created>
+      <changelist id="8fdcd14d-2e81-4221-8a86-6741580b27b1" name="Changes" comment="" />
+      <created>1677413370241</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1664431975933</updated>
+      <updated>1677413370241</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.muzhevsky.reflection.utils.Parent" memberName="someClass" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -1,9 +1,10 @@
 package com.muzhevsky.trafficLight;
 
 public class Red implements Colorable {
-    public static final Red value = new Red();;
+    public static final Red value = new Red();
+    ;
 
-    private Red(){
+    private Red() {
 
     }
 
@@ -13,7 +14,7 @@ public class Red implements Colorable {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "red";
     }
 }

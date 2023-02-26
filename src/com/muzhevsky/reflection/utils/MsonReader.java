@@ -1,7 +1,6 @@
 package com.muzhevsky.reflection.utils;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class MsonReader<T> {
@@ -17,13 +16,15 @@ public class MsonReader<T> {
         File file = new File(filePath);
         scanner = new Scanner(file);
 
-        if(!scanner.hasNext()){ return null; }
+        if (!scanner.hasNext()) {
+            return null;
+        }
 
         char[] str = scanner.next().toCharArray();
-        return (T)MsonHelper.deserialise(str, 0);
+        return (T) MsonHelper.deserialise(str, 0);
     }
 
-    public void reset(){
+    public void reset() {
         position = 0;
     }
 }

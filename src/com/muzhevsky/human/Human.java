@@ -8,10 +8,11 @@ public class Human {
     public Human(String name, int height) {
         this(new Name(name), height);
     }
+
     public Human(Name name, int height) {
-        if(name == null)
+        if (name == null)
             throw new IllegalArgumentException("name is null");
-        if(height > 500 || height < 0)
+        if (height > 500 || height < 0)
             throw new IllegalArgumentException("height is not valid");
         this.name = new Name(name);
         this.height = height;
@@ -20,15 +21,16 @@ public class Human {
     public Human(String name, int height, Human father) {
         this(new Name(name), height, father);
     }
+
     public Human(Name name, int height, Human father) {
         this(name, height);
-        if(father == null)
+        if (father == null)
             throw new IllegalArgumentException("father is null");
         this.father = new Human(father);
     }
 
 
-    public Human(Human human){
+    public Human(Human human) {
         this.name = human.getName();
         this.height = human.getHeight();
         this.father = human.getFather();
@@ -37,10 +39,12 @@ public class Human {
     public int getHeight() {
         return height;
     }
-    public Human getFather(){
+
+    public Human getFather() {
         return father;
     }
-    public Name getName(){
+
+    public Name getName() {
         return name;
     }
 

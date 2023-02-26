@@ -1,8 +1,8 @@
 package com.muzhevsky.security;
 
-public class Student extends Human{
+public class Student extends Human {
     @Override
-    public void tryToPassSecurity(Security security){
+    public void tryToPassSecurity(Security security) {
         security.check(this);
     }
 }

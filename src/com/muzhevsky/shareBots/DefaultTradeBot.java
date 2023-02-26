@@ -53,9 +53,7 @@ public class DefaultTradeBot implements TradeBot {
             account.addMoney(shareCount * prevPrice);
             shareCount = 0;
 
-        }
-
-        else if (buyRule.check(prevPrice, newPrice)) {
+        } else if (buyRule.check(prevPrice, newPrice)) {
             System.out.println("buy");
             prevPrice = prevPrice * shareCount;
             shareCount += amountToBuy;

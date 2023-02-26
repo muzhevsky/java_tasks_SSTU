@@ -4,9 +4,10 @@ public class Path {
     private Town destinationTown;
     private int moveCost;
 
-    public Path(Town destinationTown){
+    public Path(Town destinationTown) {
         this(destinationTown, 1);
     }
+
     public Path(Town destinationTown, int moveCost) {
         if (destinationTown != null)
             this.destinationTown = destinationTown;
@@ -21,15 +22,16 @@ public class Path {
         else
             throw new IllegalArgumentException("cannot create new path with moveCost <=0");
     }
-    public int getMoveCost(){
+
+    public int getMoveCost() {
         return moveCost;
     }
 
-    public Town getDestinationTown(){
+    public Town getDestinationTown() {
         return destinationTown;
     }
 
-    public String toString(){
-        return destinationTown.getName() +" "+moveCost;
+    public String toString() {
+        return destinationTown.getName() + " " + moveCost;
     }
 }

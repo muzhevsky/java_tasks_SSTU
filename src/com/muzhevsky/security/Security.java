@@ -5,11 +5,11 @@ public class Security {
         System.out.println("go away");
     }
 
-    void check(Student student){
+    void check(Student student) {
         System.out.println("give your studak");
     }
 
-    void check(Teacher teacher){
+    void check(Teacher teacher) {
         System.out.println("welcome");
     }
 }

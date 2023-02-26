@@ -50,15 +50,16 @@ public class Connection {
         return this.state;
     }
 
-    public String getValue(){
-        if(this.state == State.OPENED)
+    public String getValue() {
+        if (this.state == State.OPENED)
             return "test string";
 
         throw new ConnectionClosedException("Connection is closed");
     }
 }
-class ConnectionClosedException extends RuntimeException{
-    public ConnectionClosedException(String str){
+
+class ConnectionClosedException extends RuntimeException {
+    public ConnectionClosedException(String str) {
         super(str);
     }
 }
