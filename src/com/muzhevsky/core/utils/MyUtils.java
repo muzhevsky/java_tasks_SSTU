@@ -82,24 +82,29 @@ public abstract class MyUtils {
     }
 
 
-    // сделать статическое поле - список полей с отложенной инициализацией и каждую итерацию проверять, можно ли заполнить
-    public static Map<String, Object> collect(Collection<Class> classes) throws Exception{
+
+    public static Map<String, Object> collect(Class clazz) throws Exception{
         var result = new HashMap<String, Object>();
-
-        for (var clazz : classes){
-            for (var method : getAllMethods(clazz)){
-                if (method.getAnnotation(Invoke.class) == null) continue;
-
-                method.setAccessible(true);
-                String name = method.getReturnType().getName();
-                Object methodResult = null;
-                if (method.getParameterCount() == 0) {
-                    methodResult = method.invoke(clazz.newInstance());
-                    result.put(name, methodResult);
+        Object object = clazz.newInstance();
+        for (var method : getAllMethods(clazz)){
+            if (method.getAnnotation(Invoke.class) == null) continue;
+            Object[] parameters = new Object[method.getParameterCount()];
+            int index = 0;
+            for(Class c: method.getParameterTypes()){
+                for (Object o: result.values()){
+                    if (o.getClass().equals(c)){
+                        parameters[index] = o;
+                        index++;
+                        break;
+                    }
                 }
             }
-        }
+            method.setAccessible(true);
+            String name = method.getReturnType().getName();
 
+            Object methodResult = method.invoke(clazz.newInstance(), parameters);
+            result.put(name, methodResult);
+        }
         return result;
     }
 }
