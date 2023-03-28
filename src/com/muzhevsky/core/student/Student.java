@@ -9,20 +9,27 @@ import com.muzhevsky.core.student.marks.Mark;
 import com.muzhevsky.core.student.marks.MarkChecker;
 import com.muzhevsky.core.student.undoRedo.Action;
 import com.muzhevsky.core.student.undoRedo.UndoHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
+@Component
 public class Student {
     private String name;
     private List<Integer> marks;
-    private MarkChecker markChecker;
+//    private MarkChecker markChecker;
+    @Autowired()
+    private Predicate<Integer> markChecker;
     private List<Mark> marks_2;
     private String diplomNumber;
 
     // Constructors
+    @Autowired
     public Student() {
-        markChecker = new DefaultMarkChecker();
+//        markChecker = new DefaultMarkChecker();
         marks = new ArrayList<>();
     }
 
@@ -46,11 +53,16 @@ public class Student {
         addMarks(marks);
     }
 
+    public Student(String name, List<Integer> marks) {
+        this.name = name;
+        this.marks = marks;
+    }
+
     public Student(String name, MarkChecker markChecker, int... marks) {
         this(name);
         if (markChecker == null)
             throw new IllegalArgumentException("markChecher is null");
-        this.markChecker = markChecker;
+//        this.markChecker = markChecker;
 
         addMarks(marks);
     }
@@ -59,13 +71,13 @@ public class Student {
         this(name);
         if (markChecker == null)
             throw new IllegalArgumentException("markChecher is null");
-        this.markChecker = markChecker;
+//        this.markChecker = markChecker;
 
         this.marks = new ArrayList<>(marks);
     }
 
     public Student(Student student) {
-        this(student.name, student.markChecker, student.marks);
+        this(student.name, student.marks);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -130,8 +142,10 @@ public class Student {
 
     private boolean isValid(int... marks) {
         for (int item : marks)
-            if (!markChecker.Check(item))
+            if (!markChecker.test(item))
                 return false;
+//            if (!markChecker.Check(item))
+//                return false;
 
         return true;
     }
@@ -149,8 +163,9 @@ public class Student {
     public class StudentSave implements SaveObject<Student> {
         private String name;
         private List<Integer> marks;
-        private MarkChecker markChecker;
+//        private MarkChecker markChecker;
 
+        private Predicate<Integer> markChecker;
         public StudentSave() {
             name = Student.this.name;
             marks = new ArrayList<>(Student.this.marks);
@@ -159,7 +174,7 @@ public class Student {
 
         @Override
         public Student load() {
-            return new Student(name, markChecker, marks);
+            return new Student(name, marks);
         }
     }
 

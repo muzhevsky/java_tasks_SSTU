@@ -4,17 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fdcd14d-2e81-4221-8a86-6741580b27b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tasks.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    <list default="true" id="5a075bb6-8815-488c-a7d4-ce373e441247" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/toString/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/DefaultConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tasks.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Green.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Green.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MsonHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MsonReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MsonWriter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/annotations/ToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/toString/ToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/HomeworkConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,23 +51,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-        <option name="usePluginRegistry" value="true" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2MH8uJWZJezmkzqs3CtOarBQl7V" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2N5H6lAFMvZyPg5SQF59CYcvctm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,22 +60,36 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Projects/Java/SSTU Tasks&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Education/SSTU/Java/Tasks&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Education\SSTU\Java\untitled1\src\com\muzhevsky\core\utils" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.muzhevsky.main.Main" />
+      <module name="Tasks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8fdcd14d-2e81-4221-8a86-6741580b27b1" name="Changes" comment="" />
-      <created>1677413370241</created>
+      <changelist id="5a075bb6-8815-488c-a7d4-ce373e441247" name="Changes" comment="" />
+      <created>1678946875331</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677413370241</updated>
+      <updated>1678946875331</updated>
     </task>
     <servers />
   </component>
@@ -93,16 +108,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/muzhevsky/core/utils/MyUtils.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/com/muzhevsky/core/utils/toString/Entity.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="12" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.muzhevsky.core.utils.test.ValidateException" package="com.muzhevsky.core.utils.test" />
+          <option name="timeStamp" value="18" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="com.muzhevsky.reflection.utils.Parent" memberName="someClass" />
-      </pinned-members>
-    </pin-to-top-manager>
   </component>
 </project>

@@ -1,8 +1,9 @@
 package com.muzhevsky.core.utils;
 
+import com.muzhevsky.core.utils.toString.Entity;
 import com.muzhevsky.core.utils.test.SomeClass;
 
-public class Parent extends com.muzhevsky.core.utils.Entity {
+public class Parent extends Entity {
     private String text;
     public int testInt;
     public SomeClass someClass = new SomeClass("asd");

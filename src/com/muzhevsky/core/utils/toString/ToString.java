@@ -1,4 +1,4 @@
-package com.muzhevsky.core.utils.annotations;
+package com.muzhevsky.core.utils.toString;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,9 +8,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
 public @interface ToString {
-     Test value() default Test.YES;
+     ToStringParameter value() default ToStringParameter.YES;
 }
 
-enum Test{
-    YES, NO;
-}

@@ -2,10 +2,13 @@ package com.muzhevsky.core.utils;
 
 import com.muzhevsky.core.geometry.Line;
 import com.muzhevsky.core.utils.annotations.Invoke;
+import com.muzhevsky.core.utils.annotations.Validate;
+import com.muzhevsky.core.utils.test.ValidateException;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Type;
 import java.util.*;
 
 public abstract class MyUtils {
@@ -82,17 +85,16 @@ public abstract class MyUtils {
     }
 
 
-
-    public static Map<String, Object> collect(Class clazz) throws Exception{
-        var result = new HashMap<String, Object>();
+    public static Map<Type, Object> collect(Class clazz) throws Exception {
+        var result = new HashMap<Type, Object>();
         Object object = clazz.newInstance();
-        for (var method : getAllMethods(clazz)){
+        for (var method : getAllMethods(clazz)) {
             if (method.getAnnotation(Invoke.class) == null) continue;
             Object[] parameters = new Object[method.getParameterCount()];
             int index = 0;
-            for(Class c: method.getParameterTypes()){
-                for (Object o: result.values()){
-                    if (o.getClass().equals(c)){
+            for (Class c : method.getParameterTypes()) {
+                for (Object o : result.values()) {
+                    if (o.getClass().equals(c)) {
                         parameters[index] = o;
                         index++;
                         break;
@@ -103,8 +105,46 @@ public abstract class MyUtils {
             String name = method.getReturnType().getName();
 
             Object methodResult = method.invoke(clazz.newInstance(), parameters);
-            result.put(name, methodResult);
+            result.put(method.getReturnType(), methodResult);
         }
         return result;
+    }
+
+    public static void validate(Object object) throws Exception {
+        var testContainer = object.getClass().getAnnotation(Validate.class);
+        if (testContainer == null) throw new ValidateException("there is no tests for this object");
+
+        for (var testSet : testContainer.value()) {
+            var tests = testSet.getDeclaredMethods();
+            for (var test : tests) {
+                try {
+                    test.invoke(testSet.newInstance(), object);
+                }
+                catch (InvocationTargetException ex){
+                    throw new ValidateException(ex.getCause().getMessage());
+                }
+            }
+        }
+    }
+
+    public static <T> T getValueOfNecessaryType(Object item, String fieldName) throws Exception{
+        Class<?> clazz = item.getClass();
+        Field field = clazz.getDeclaredField(fieldName);
+        if (field == null) field = clazz.getField(fieldName);
+
+        field.setAccessible(true);
+
+        T value;
+        try {
+            value = (T)(field.get(item));
+        }
+        catch (Exception ex){
+            throw new ValidateException(fieldName+" is not valid");
+        }
+        finally {
+            field.setAccessible(true);
+        }
+
+        return value;
     }
 }
