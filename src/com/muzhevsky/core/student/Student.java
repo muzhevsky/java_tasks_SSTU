@@ -10,6 +10,7 @@ import com.muzhevsky.core.student.marks.MarkChecker;
 import com.muzhevsky.core.student.undoRedo.Action;
 import com.muzhevsky.core.student.undoRedo.UndoHandler;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -20,8 +21,7 @@ import java.util.function.Predicate;
 public class Student {
     private String name;
     private List<Integer> marks;
-//    private MarkChecker markChecker;
-    @Autowired()
+
     private Predicate<Integer> markChecker;
     private List<Mark> marks_2;
     private String diplomNumber;
@@ -29,8 +29,8 @@ public class Student {
     // Constructors
     @Autowired
     public Student() {
-//        markChecker = new DefaultMarkChecker();
         marks = new ArrayList<>();
+        markChecker = (mark) -> true;
     }
 
     public Student(String name, Mark... marks) {
@@ -58,23 +58,6 @@ public class Student {
         this.marks = marks;
     }
 
-    public Student(String name, MarkChecker markChecker, int... marks) {
-        this(name);
-        if (markChecker == null)
-            throw new IllegalArgumentException("markChecher is null");
-//        this.markChecker = markChecker;
-
-        addMarks(marks);
-    }
-
-    public Student(String name, MarkChecker markChecker, List<Integer> marks) {
-        this(name);
-        if (markChecker == null)
-            throw new IllegalArgumentException("markChecher is null");
-//        this.markChecker = markChecker;
-
-        this.marks = new ArrayList<>(marks);
-    }
 
     public Student(Student student) {
         this(student.name, student.marks);
@@ -91,7 +74,6 @@ public class Student {
         return average;
     }
 
-
     public ArrayList<Integer> getMarks() {
         return new ArrayList<>(this.marks);
     }
@@ -101,6 +83,18 @@ public class Student {
     @Invoke
     public int getMarksCount() {
         return marks.size();
+    }
+
+    @Autowired()
+    @Qualifier("predicate")
+    public void setMarkChecker(Predicate<Integer> markChecker){
+        if (markChecker == null) throw new IllegalArgumentException("markChecker is null");
+        this.markChecker = markChecker;
+    }
+
+    public void setName(String name){
+        if (name == null) throw new IllegalArgumentException("name is null");
+        this.name = name;
     }
 
     public void addMarks(int... marks) {
@@ -144,8 +138,6 @@ public class Student {
         for (int item : marks)
             if (!markChecker.test(item))
                 return false;
-//            if (!markChecker.Check(item))
-//                return false;
 
         return true;
     }
@@ -163,7 +155,6 @@ public class Student {
     public class StudentSave implements SaveObject<Student> {
         private String name;
         private List<Integer> marks;
-//        private MarkChecker markChecker;
 
         private Predicate<Integer> markChecker;
         public StudentSave() {

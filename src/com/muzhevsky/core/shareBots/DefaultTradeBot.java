@@ -13,35 +13,61 @@ public class DefaultTradeBot implements TradeBot {
     private Share share;
     private Account account;
 
-    public DefaultTradeBot(String name, CheckRule buyRule, CheckRule sellRule, Account account) {
-        if (name == null || name.length() < 1)
-            throw new IllegalArgumentException("name is null or empty");
+    public DefaultTradeBot(CheckRule buyRule, CheckRule sellRule){
         if (buyRule == null)
             throw new IllegalArgumentException("buy rule is null");
         if (sellRule == null)
             throw new IllegalArgumentException("sell rule is null");
+
+        this.buyRule = buyRule;
+        this.sellRule = sellRule;
+        this.account = new Account(); // костыль
+    }
+
+    public DefaultTradeBot(String name, CheckRule buyRule, CheckRule sellRule, Account account) {
+        this(buyRule, sellRule);
+        if (name == null || name.length() < 1)
+            throw new IllegalArgumentException("name is null or empty");
         if (account == null)
             throw new IllegalArgumentException("account is null");
 
         this.name = name;
-        this.buyRule = buyRule;
-        this.sellRule = sellRule;
         this.account = account;
     }
 
+    @Override
     public void setNewShare(Share share) {
         if (share == null)
             throw new IllegalArgumentException("share is null");
 
+        removeShare();
+        share.addFollower(this);
+
+        prevPrice = share.getPrice();
+        this.share = share;
+    }
+
+    @Override
+    public void setNewShare(Exchange exchange, String name) {
+        if (exchange == null)
+            throw new IllegalArgumentException("exchange is null");
+        if (name == null)
+            throw new IllegalArgumentException("name is null");
+
+        removeShare();
+        var share = exchange.getShare(name);
+        share.addFollower(this);
+
+        prevPrice = share.getPrice();
+        this.share = share;
+    }
+
+    private void removeShare(){
         double income = prevPrice * shareCount;
         account.addMoney(income);
 
         if (this.share != null)
             this.share.removeFollower(this);
-        share.addFollower(this);
-
-        prevPrice = share.getPrice();
-        this.share = share;
     }
 
     public void action(double newPrice) {

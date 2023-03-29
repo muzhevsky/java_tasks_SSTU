@@ -5,31 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a075bb6-8815-488c-a7d4-ce373e441247" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/toString/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/DefaultConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/DefaultTradeBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/DefaultTradeBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/Share.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/Share.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/TradeBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/TradeBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/student/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Green.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Green.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/Entity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MsonHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MsonReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MsonWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MyUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/annotations/ToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/toString/ToString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/HomeworkConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/Config1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/NewColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/NewColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/NewTrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/NewTrafficLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/com.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +38,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2N5H6lAFMvZyPg5SQF59CYcvctm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,7 +52,8 @@
     &quot;last_opened_file_path&quot;: &quot;F:/Education/SSTU/Java/Tasks&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -114,12 +104,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java</url>
-          <line>7</line>
+          <line>8</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java</url>
-          <line>15</line>
+          <line>17</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
@@ -132,5 +122,8 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SSTU_Tasks$Application.ic" NAME="Application Coverage Results" MODIFIED="1680023687476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
