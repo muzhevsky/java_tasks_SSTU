@@ -1,6 +1,6 @@
-package com.muzhevsky.core.utils;
+package com.muzhevsky.spring.utils;
 
-import com.muzhevsky.core.utils.annotations.Cache;
+import com.muzhevsky.spring.utils.annotations.Cache;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

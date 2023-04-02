@@ -1,9 +1,9 @@
-package com.muzhevsky.core.utils;
+package com.muzhevsky.spring.utils;
 
 import com.muzhevsky.core.geometry.Line;
-import com.muzhevsky.core.utils.annotations.Invoke;
-import com.muzhevsky.core.utils.annotations.Validate;
-import com.muzhevsky.core.utils.test.ValidateException;
+import com.muzhevsky.spring.utils.annotations.Invoke;
+import com.muzhevsky.spring.utils.annotations.Validate;
+import com.muzhevsky.spring.utils.test.ValidateException;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

@@ -1,4 +1,4 @@
-package com.muzhevsky.core.utils.toString;
+package com.muzhevsky.spring.utils.toString;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

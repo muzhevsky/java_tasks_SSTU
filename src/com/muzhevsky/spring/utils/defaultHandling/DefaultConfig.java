@@ -1,6 +1,6 @@
-package com.muzhevsky.core.utils.defaultHandling;
+package com.muzhevsky.spring.utils.defaultHandling;
 
-import com.muzhevsky.core.utils.annotations.Invoke;
+import com.muzhevsky.spring.utils.annotations.Invoke;
 
 public class DefaultConfig {
     @Invoke

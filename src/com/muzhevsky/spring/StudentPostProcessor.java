@@ -1,4 +1,4 @@
-package com.muzhevsky.spring.streamingPlatform;
+package com.muzhevsky.spring;
 
 import com.muzhevsky.core.student.Student;
 import org.springframework.beans.BeansException;

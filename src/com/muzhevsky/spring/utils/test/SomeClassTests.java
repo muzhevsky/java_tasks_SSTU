@@ -1,6 +1,6 @@
-package com.muzhevsky.core.utils.test;
+package com.muzhevsky.spring.utils.test;
 
-import com.muzhevsky.core.utils.MyUtils;
+import com.muzhevsky.spring.utils.MyUtils;
 
 
 public final class SomeClassTests {

@@ -1,4 +1,4 @@
-package com.muzhevsky.core.utils.test;
+package com.muzhevsky.spring.utils.test;
 
 public class ValidateException extends RuntimeException {
 

@@ -1,7 +1,7 @@
-package com.muzhevsky.core.utils;
+package com.muzhevsky.spring.utils;
 
-import com.muzhevsky.core.utils.toString.Entity;
-import com.muzhevsky.core.utils.test.SomeClass;
+import com.muzhevsky.spring.utils.toString.Entity;
+import com.muzhevsky.spring.utils.test.SomeClass;
 
 public class Parent extends Entity {
     private String text;

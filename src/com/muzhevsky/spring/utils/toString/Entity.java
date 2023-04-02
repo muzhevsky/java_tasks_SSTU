@@ -1,10 +1,10 @@
-package com.muzhevsky.core.utils.toString;
+package com.muzhevsky.spring.utils.toString;
 
 import java.lang.reflect.Field;
 import java.util.Set;
 import java.util.function.Predicate;
 
-import static com.muzhevsky.core.utils.MyUtils.getAllFields;
+import static com.muzhevsky.spring.utils.MyUtils.getAllFields;
 
 public class Entity {
     @Override

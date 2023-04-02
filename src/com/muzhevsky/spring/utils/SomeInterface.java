@@ -1,4 +1,4 @@
-package com.muzhevsky.core.utils;
+package com.muzhevsky.spring.utils;
 
 public interface SomeInterface {
     String getText();

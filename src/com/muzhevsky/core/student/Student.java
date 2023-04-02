@@ -1,12 +1,10 @@
 package com.muzhevsky.core.student;
 
-import com.muzhevsky.core.utils.annotations.Invoke;
+import com.muzhevsky.spring.utils.annotations.Invoke;
 import com.muzhevsky.core.save.SaveObject;
 import com.muzhevsky.core.student.diplom.DiplomGenerator;
 import com.muzhevsky.core.student.diplom.StudentDismissalChecker;
-import com.muzhevsky.core.student.marks.DefaultMarkChecker;
 import com.muzhevsky.core.student.marks.Mark;
-import com.muzhevsky.core.student.marks.MarkChecker;
 import com.muzhevsky.core.student.undoRedo.Action;
 import com.muzhevsky.core.student.undoRedo.UndoHandler;
 import org.springframework.beans.factory.annotation.Autowired;
