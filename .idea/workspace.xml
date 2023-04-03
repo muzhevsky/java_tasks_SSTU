@@ -5,32 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a075bb6-8815-488c-a7d4-ce373e441247" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/student/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/CacheHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/MyUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/SomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/SomeInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/annotations/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Cache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/annotations/Invoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Invoke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/annotations/Two.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Two.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/annotations/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Validate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/defaultHandling/Default.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/defaultHandling/Default.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/defaultHandling/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/defaultHandling/DefaultConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/defaultHandling/DefaultHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/defaultHandling/DefaultHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/SomeClassTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClassTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/test/ValidateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/ValidateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/toString/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/toString/ToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/ToString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/utils/toString/ToStringParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/ToStringParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/StudentPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/StudentPostProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/NamePostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/NamePostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ToStringPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ToStringPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Cache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/ToStringHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/ToStringMethodInterceptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,15 +48,19 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "F:/Education/SSTU/Java/Tasks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "8bf0022760e09af0e30bf09288daf246",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -80,8 +68,19 @@
       <recent name="F:\Education\SSTU\Java\untitled1\src\com\muzhevsky\core\utils" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn --add-opens java.base/java.io=ALL-UNNAMED" />
+      <command value="--add-opens java.base/java.io=ALL-UNNAMED" />
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="--add-opens java.base/java.lang" value="ALL-UNNAMED " />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.muzhevsky.main.Main" />
       <module name="untitled1" />
       <method v="2">
@@ -110,8 +109,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678946875331</updated>
+      <workItem from="1680550458842" duration="10520000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -136,6 +139,11 @@
           <url>file://$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClassTests.java</url>
           <line>17</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ToStringPostProcessor.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />

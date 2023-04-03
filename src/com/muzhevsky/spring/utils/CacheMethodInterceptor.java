@@ -1,21 +1,20 @@
 package com.muzhevsky.spring.utils;
 
 import com.muzhevsky.spring.utils.annotations.Cache;
+import org.aopalliance.intercept.MethodInvocation;
+import org.springframework.cglib.proxy.MethodInterceptor;
+import org.springframework.cglib.proxy.MethodProxy;
 
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
-public class CacheHandler implements InvocationHandler {
-
-    private Map<MethodInvocationData, Object> _cachedData = new HashMap<>();
-
+public class CacheMethodInterceptor implements MethodInterceptor {
+    Map<MethodInvocationData, Object> _cachedData = new HashMap<>();
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+    public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
         if (!method.isAnnotationPresent(Cache.class)) return method.invoke(proxy, args);
 
         for (var item : _cachedData.keySet()){
@@ -23,9 +22,8 @@ public class CacheHandler implements InvocationHandler {
                 return _cachedData.get(item);
         }
 
-        var result = method.invoke(proxy, args);
+        var result = proxy.invokeSuper(obj, args);
         _cachedData.put(new MethodInvocationData(method, args), result);
         return result;
     }
-
 }

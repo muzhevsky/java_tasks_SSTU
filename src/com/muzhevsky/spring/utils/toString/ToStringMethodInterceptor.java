@@ -6,19 +6,23 @@ import org.springframework.cglib.proxy.MethodProxy;
 import org.springframework.util.ClassUtils;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.Set;
 import java.util.function.Predicate;
 
 import static com.muzhevsky.spring.utils.MyUtils.getAllFields;
 
-public class ToStringHandler implements MethodInterceptor {
-
-
+public class ToStringMethodInterceptor implements MethodInterceptor {
     @Override
     public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
-        if (method.getName() != "toString") return method.invoke(obj, args);
+        if (!method.getName().equals("toString")) {
+            return proxy.invokeSuper(obj, args);
+        }
+
+        if (obj.getClass().isAnnotationPresent(ToString.class) &&
+                obj.getClass().getAnnotation(ToString.class).value() == ToStringParameter.NO)
+            return obj.getClass().toString();
+
 
         Set<Field> allFields = getAllFields(obj.getClass());
 
@@ -33,9 +37,7 @@ public class ToStringHandler implements MethodInterceptor {
                     .append("(");
         }
 
-        if (this.getClass().isAnnotationPresent(ToString.class)
-                && this.getClass().getAnnotation(ToString.class).value() == ToStringParameter.NO)
-            return this.getClass().toString();
+
 
         Predicate<Field> fieldAnnotationChecker =
                 field -> !field.isAnnotationPresent(ToString.class) ||
