@@ -31,17 +31,15 @@ public class ToStringMethodInterceptor implements MethodInterceptor {
         if (Enhancer.isEnhanced(obj.getClass())) {
             stringBuilder.append(ClassUtils.getUserClass(obj))
                     .append("(");
-        }
-        else {
+        } else {
             stringBuilder.append(obj.getClass().getName())
                     .append("(");
         }
 
 
-
         Predicate<Field> fieldAnnotationChecker =
                 field -> !field.isAnnotationPresent(ToString.class) ||
-                field.getAnnotation(ToString.class).value() == ToStringParameter.NO;
+                        field.getAnnotation(ToString.class).value() == ToStringParameter.NO;
 
         for (Field f : allFields) {
             try {
@@ -54,7 +52,7 @@ public class ToStringMethodInterceptor implements MethodInterceptor {
                         .append("=");
 
                 if (value == null) stringBuilder.append("null");
-                else stringBuilder.append(value.toString());
+                else stringBuilder.append(value);
 
                 stringBuilder.append(";");
             } catch (IllegalAccessException e) {

@@ -1,20 +1,5 @@
 package com.muzhevsky.spring.configs;
 
-import com.muzhevsky.core.shareBots.*;
-import com.muzhevsky.core.student.Student;
-import com.muzhevsky.core.trafficLight.Colorable;
-import com.muzhevsky.spring.streamingPlatform.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Scope;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
-import java.util.function.Predicate;
-
 //@Configuration
 public class Config2 {
 //    private final List<Integer> randomList = new LinkedList<>();

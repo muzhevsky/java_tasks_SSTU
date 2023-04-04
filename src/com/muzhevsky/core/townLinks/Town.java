@@ -80,8 +80,7 @@ public class Town {
     @Override
     public final boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || !(o instanceof Town)) return false;
-        Town town = (Town) o;
+        if (o == null || !(o instanceof Town town)) return false;
         return paths.equals(town.paths);
     }
 }

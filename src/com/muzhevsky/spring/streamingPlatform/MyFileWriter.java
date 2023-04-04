@@ -10,11 +10,13 @@ import java.io.IOException;
 public class MyFileWriter implements Writer {
     String path;
     FileOutputStream fileOutputStream;
+
     public void setPath(String path) throws FileNotFoundException {
         if (path == null) throw new IllegalArgumentException();
         this.path = path;
         fileOutputStream = new FileOutputStream(path);
     }
+
     @Override
     public void write(String data) {
         try {

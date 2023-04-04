@@ -89,8 +89,7 @@ public class Polyline implements Measurable, PolylineConvertable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || !(o instanceof Polyline)) return false;
-        Polyline polyline = (Polyline) o;
+        if (o == null || !(o instanceof Polyline polyline)) return false;
         return Objects.equals(points, polyline.points);
     }
 

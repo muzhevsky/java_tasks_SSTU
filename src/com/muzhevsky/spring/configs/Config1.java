@@ -5,14 +5,6 @@ package com.muzhevsky.spring.configs;
 //import org.springframework.context.annotation.Lazy;
 //import org.springframework.context.annotation.Scope;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
-
-import java.util.Date;
-import java.util.function.Predicate;
-
 //@Configuration
 public class Config1 {
 //    @Bean

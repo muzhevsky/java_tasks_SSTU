@@ -1,7 +1,6 @@
 package com.muzhevsky.spring.utils.test;
 
 import com.muzhevsky.spring.toString.Entity;
-import com.muzhevsky.spring.utils.test.SomeClass;
 
 public class Parent extends Entity {
     private String text;

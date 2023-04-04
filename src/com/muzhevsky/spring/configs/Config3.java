@@ -10,13 +10,18 @@ import org.springframework.context.annotation.Scope;
 public class Config3 {
     @Bean("someObject")
     @Scope("prototype")
-    public SomeClass someObject(){
-        return new SomeClass("test",5);
+    public SomeClass someObject() {
+        return new SomeClass("test", 5);
     }
 
     @Bean("someClassTests")
     @Scope("singleton")
-    public SomeClassTests someClassTests(){
+    public SomeClassTests someClassTests() {
         return new SomeClassTests();
+    }
+
+    @Bean("hello")
+    public String hello(){
+        return "hello";
     }
 }

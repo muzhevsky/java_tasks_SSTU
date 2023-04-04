@@ -16,7 +16,6 @@ public class Entity {
                 .append("(");
 
 
-
         if (this.getClass().isAnnotationPresent(ToString.class)
                 && this.getClass().getAnnotation(ToString.class).value() == ToStringParameter.NO)
             return this.getClass().toString();
@@ -37,7 +36,7 @@ public class Entity {
                         .append("=");
 
                 if (value == null) stringBuilder.append("null");
-                else stringBuilder.append(value.toString());
+                else stringBuilder.append(value);
 
                 stringBuilder.append(";");
             } catch (IllegalAccessException e) {

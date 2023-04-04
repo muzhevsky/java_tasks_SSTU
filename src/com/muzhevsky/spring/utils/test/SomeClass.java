@@ -10,13 +10,14 @@ import java.util.Random;
 
 @Validate("someClassTests")
 @Cache
+@Default("")
 public class SomeClass implements SomeInterface {
-    @Default(DefaultConfig.class)
+    @Default("hello")
     @ToString
     private String text;
     private String name;
     private Random random = new Random();
-    private Integer number;
+    private int number;
 
     public SomeClass(){
 
@@ -43,6 +44,14 @@ public class SomeClass implements SomeInterface {
 
     public String getName(){
         return name;
+    }
+
+    public int getNumber(){
+        return number;
+    }
+
+    private int getDefaultInt(){
+        return 12345;
     }
 
 }
