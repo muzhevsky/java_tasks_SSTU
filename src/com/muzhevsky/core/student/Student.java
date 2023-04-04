@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-@Component
+//@Component
 public class Student {
     private String name;
     private List<Integer> marks;
@@ -25,7 +25,7 @@ public class Student {
     private String diplomNumber;
 
     // Constructors
-    @Autowired
+//    @Autowired
     public Student() {
         marks = new ArrayList<>();
         markChecker = (mark) -> true;
@@ -83,8 +83,8 @@ public class Student {
         return marks.size();
     }
 
-    @Autowired()
-    @Qualifier("predicate")
+//    @Autowired()
+//    @Qualifier("predicate")
     public void setMarkChecker(Predicate<Integer> markChecker){
         if (markChecker == null) throw new IllegalArgumentException("markChecker is null");
         this.markChecker = markChecker;

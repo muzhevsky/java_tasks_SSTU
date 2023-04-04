@@ -24,7 +24,7 @@ public class CacheHandler implements InvocationHandler {
         }
 
         var result = method.invoke(proxy, args);
-        _cachedData.put(new MethodInvocationData(method, args), result);
+        _cachedData.put(new MethodInvocationData(proxy, method, args), result);
         return result;
     }
 

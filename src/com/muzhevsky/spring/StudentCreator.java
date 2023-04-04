@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.function.Predicate;
 
 
-@Component
+//@Component
 public class StudentCreator {
 
 

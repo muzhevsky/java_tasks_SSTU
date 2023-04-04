@@ -5,10 +5,7 @@ import com.muzhevsky.spring.utils.annotations.Invoke;
 import com.muzhevsky.spring.utils.annotations.Validate;
 import com.muzhevsky.spring.utils.test.ValidateException;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
+import java.lang.reflect.*;
 import java.util.*;
 
 public abstract class MyUtils {
@@ -146,5 +143,14 @@ public abstract class MyUtils {
         }
 
         return value;
+    }
+
+    public static boolean hasDefaultConstructor(Class<?> clazz) {
+        for (Constructor constructor : clazz.getConstructors()) {
+            if (constructor.getParameterTypes().length == 0) {
+                return true;
+            }
+        }
+        return false;
     }
 }

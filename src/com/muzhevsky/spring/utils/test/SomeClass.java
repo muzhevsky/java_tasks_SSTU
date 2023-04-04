@@ -13,11 +13,10 @@ import com.muzhevsky.spring.utils.annotations.Validate;
 import java.util.Random;
 
 @Validate(SomeClassTests.class)
-@ToString
 @Cache
 public class SomeClass implements SomeInterface {
     @Default(DefaultConfig.class)
-    @ToString(ToStringParameter.YES)
+    @ToString
     private String text;
     private Random random = new Random();
     private Integer number;

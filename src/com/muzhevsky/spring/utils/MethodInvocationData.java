@@ -7,6 +7,11 @@ import java.util.Objects;
 public     class MethodInvocationData{
     private Method method;
     private Object[] args;
+    private Object owner;
+
+    public Object getOwner(){
+        return owner;
+    }
 
     public Method getMethod(){
         return method;
@@ -15,7 +20,8 @@ public     class MethodInvocationData{
         return Arrays.copyOf(args, args.length);
     }
 
-    public MethodInvocationData(Method method, Object[] args) {
+    public MethodInvocationData(Object owner, Method method, Object[] args) {
+        this.owner = owner;
         this.method = method;
         this.args = args;
     }

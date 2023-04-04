@@ -18,12 +18,12 @@ public class CacheMethodInterceptor implements MethodInterceptor {
         if (!method.isAnnotationPresent(Cache.class)) return method.invoke(proxy, args);
 
         for (var item : _cachedData.keySet()){
-            if (item.getMethod() == method && Arrays.equals(item.getArgs(), args))
+            if (item.getMethod() == method && Arrays.equals(item.getArgs(), args) && obj == item.getOwner())
                 return _cachedData.get(item);
         }
 
         var result = proxy.invokeSuper(obj, args);
-        _cachedData.put(new MethodInvocationData(method, args), result);
+        _cachedData.put(new MethodInvocationData(obj, method, args), result);
         return result;
     }
 }
