@@ -8,15 +8,17 @@ public class NewColor implements Colorable {
     @ToString(ToStringParameter.YES)
     private String value;
     private Colorable next;
-    public NewColor(){   // Иначе не создается через Enhancer
+
+    public NewColor() {   // Иначе не создается через Enhancer
 
     }
-    public NewColor(String value, Colorable next){
+
+    public NewColor(String value, Colorable next) {
         this.value = value;
         this.next = next;
     }
 
-    public void setNext(Colorable next){
+    public void setNext(Colorable next) {
         this.next = next;
     }
 
@@ -26,7 +28,7 @@ public class NewColor implements Colorable {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return value;
     }
 

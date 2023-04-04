@@ -9,8 +9,6 @@ public class Cuckoo extends Bird {
     public Cuckoo() {
     }
 
-    ;
-
     public Cuckoo(boolean isFlyable, ColorRGB color) {
         super(isFlyable, color);
     }

@@ -19,6 +19,7 @@ public class ValidatePostProcessor implements BeanPostProcessor {
     Map<String, Object> objects = new HashMap<>();
     @Autowired
     ApplicationContext ctx;
+
     @Nullable
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         objects.put(beanName, bean);
@@ -32,7 +33,7 @@ public class ValidatePostProcessor implements BeanPostProcessor {
         String[] testContainer = realObject.getClass().getAnnotation(Validate.class).value();
         if (testContainer == null) throw new ValidateException("there is no tests for this object");
 
-        for(String test : testContainer){
+        for (String test : testContainer) {
             if (test == null) throw new ValidateException("invalid test");
 
             Object testObject = ctx.getBean(test);
@@ -41,8 +42,7 @@ public class ValidatePostProcessor implements BeanPostProcessor {
             for (var method : tests) {
                 try {
                     method.invoke(testObject.getClass().newInstance(), realObject);
-                }
-                catch (InvocationTargetException ex){
+                } catch (InvocationTargetException ex) {
                     throw new ValidateException(ex.getCause().getMessage());
                 } catch (IllegalAccessException e) {
                     throw new RuntimeException(e);

@@ -8,6 +8,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
 public @interface ToString {
-     ToStringParameter value() default ToStringParameter.YES;
+    ToStringParameter value() default ToStringParameter.YES;
 }
 

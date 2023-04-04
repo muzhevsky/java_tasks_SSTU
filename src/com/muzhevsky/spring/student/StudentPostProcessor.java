@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -18,6 +17,7 @@ public class StudentPostProcessor implements BeanPostProcessor {
     @Qualifier("predicate")
     @Lazy
     Predicate<Integer> range;
+
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         return bean;
@@ -25,11 +25,10 @@ public class StudentPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if (bean instanceof Student){
-            Student student = (Student)bean;
+        if (bean instanceof Student student) {
             student.setMarkChecker(range);
             List<Integer> marks = student.getMarks();
-            for(int i = 0; i < marks.size(); i++){
+            for (int i = 0; i < marks.size(); i++) {
                 if (!range.test(marks.get(i))) throw new IllegalArgumentException("wrong marks");
             }
         }

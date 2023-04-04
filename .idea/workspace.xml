@@ -5,16 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a075bb6-8815-488c-a7d4-ce373e441247" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/DefaultPostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/animals/Cuckoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/animals/Cuckoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/animals/Meowable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/animals/Meowable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/animals/Sparrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/animals/Sparrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/converter/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/converter/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/converter/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/converter/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/converter/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/converter/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/fighters/Punch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/fighters/Punch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/fighters/Punch2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/fighters/Punch2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/fighters/PunchType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/fighters/PunchType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/geometry/Measurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/geometry/Measurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/geometry/Polyline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/geometry/Polyline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/geometry/PolylineConvertable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/geometry/PolylineConvertable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/house/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/house/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/save/SaveObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/save/SaveObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/CheckRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/CheckRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/TradeBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/shareBots/TradeBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/structures/Copyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/structures/Copyable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/student/marks/Mark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/student/marks/Mark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/student/marks/MarkChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/student/marks/MarkChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/student/undoRedo/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/student/undoRedo/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/townLinks/Town.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/townLinks/Town.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Colorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Colorable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Green.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Green.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/trafficLight/Red.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/cache/CacheMethodInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/cache/CacheMethodInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/Default.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/Default.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/DefaultConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/DefaultHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/DefaultHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/CachePostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/CachePostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/NamePostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/NamePostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/RandomBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/RandomBeanFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ToStringPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ToStringPostProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/MyUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Validate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ValidatePostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ValidatePostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/random/MyRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/random/MyRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/MyFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/MyFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/MyFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/MyFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/StringDoublerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/StringDoublerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/StringToUpperHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/StringToUpperHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/StringTrimHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/StringTrimHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/streamingPlatform/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/student/StudentCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/student/StudentCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/student/StudentPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/student/StudentPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringMethodInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringMethodInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/trafficLight/NewColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/trafficLight/NewColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Two.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Two.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/Parent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,14 +182,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/muzhevsky/main/Main.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="76" />
+          <url>file://$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringHandler.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ToStringPostProcessor.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="77" />
+          <url>file://$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/DefaultPostProcessor.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />

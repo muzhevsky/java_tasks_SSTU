@@ -3,8 +3,6 @@ package com.muzhevsky.spring.student;
 import com.muzhevsky.core.student.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.stereotype.Component;
 
 import java.util.function.Predicate;
 
@@ -15,22 +13,24 @@ public class StudentCreator {
 
     private Predicate<Integer> range;
 
-    public StudentCreator(){
+    public StudentCreator() {
 
     }
+
     @Autowired
     @Qualifier("predicate")
-    public void setRange(Predicate<Integer> range){
+    public void setRange(Predicate<Integer> range) {
         if (range == null) throw new IllegalArgumentException();
         this.range = range;
     }
 
-    public Student GetStudent(String name){
+    public Student GetStudent(String name) {
         var student = new Student(name);
         student.setMarkChecker(range);
         return student;
     }
-    public Student GetStudent(String name, int...marks){
+
+    public Student GetStudent(String name, int... marks) {
         var student = new Student(name);
         student.setMarkChecker(range);
         student.addMarks(marks);

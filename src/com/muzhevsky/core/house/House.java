@@ -18,7 +18,7 @@ public class House {
 
     public String toString() {
         if (floorAmount % 10 == 1 && floorAmount % 100 != 11)
-            return "дом с " + Integer.toString(floorAmount) + " этажом";
-        return "дом с " + Integer.toString(floorAmount) + " этажами";
+            return "дом с " + floorAmount + " этажом";
+        return "дом с " + floorAmount + " этажами";
     }
 }

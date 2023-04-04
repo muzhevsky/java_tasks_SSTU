@@ -1,7 +1,7 @@
 package com.muzhevsky.core.student.undoRedo;
 
 public interface Action {
-    public void Undo();
+    void Undo();
 
-    public void Redo();
+    void Redo();
 }

@@ -13,8 +13,8 @@ public class DefaultHandler {
             Set<Field> fields = getAllFields(o.getClass());
             Map<Type, Object> defaults = null;
             if (o.getClass().isAnnotationPresent(Default.class)) {
-                Class config = o.getClass().getAnnotation(Default.class).value();
-                defaults = MyUtils.collect(config);
+                //Class config = o.getClass().getAnnotation(Default.class).value();
+                //defaults = MyUtils.collect(config);
                 for (var f : fields) {
                     if (f.getType().isPrimitive()) continue;
                     else resetHelper(f, o, defaults);

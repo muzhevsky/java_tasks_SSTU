@@ -2,7 +2,6 @@ package com.muzhevsky.core.trafficLight;
 
 public class Red implements Colorable {
     public static final Red value = new Red();
-    ;
 
     private Red() {
 
