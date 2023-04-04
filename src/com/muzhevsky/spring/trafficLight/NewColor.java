@@ -1,10 +1,8 @@
-package com.muzhevsky.spring;
+package com.muzhevsky.spring.trafficLight;
 
 import com.muzhevsky.core.trafficLight.Colorable;
-import com.muzhevsky.spring.utils.toString.ToString;
-import com.muzhevsky.spring.utils.toString.ToStringParameter;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import com.muzhevsky.spring.toString.ToString;
+import com.muzhevsky.spring.toString.ToStringParameter;
 
 public class NewColor implements Colorable {
     @ToString(ToStringParameter.YES)

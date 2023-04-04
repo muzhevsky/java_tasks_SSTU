@@ -7,20 +7,33 @@
     <list default="true" id="5a075bb6-8815-488c-a7d4-ce373e441247" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/security/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/security/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/core/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/core/student/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/Config1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/Config1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/Config2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/Config2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/NewColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/NewColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/StudentCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/StudentCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/Config1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/Config2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/Config3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/NewColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/trafficLight/NewColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/NewTrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/trafficLight/NewTrafficLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/review/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/StudentCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/student/StudentCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/StudentPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/student/StudentPostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/CachePostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/CachePostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/NamePostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/NamePostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ToStringPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/ToStringPostProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheMethodInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheMethodInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/MethodInvocationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/MethodInvocationData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/MyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/cache/CacheHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/CacheMethodInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/cache/CacheMethodInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/MethodInvocationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/cache/MethodInvocationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/SomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/annotations/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/cache/Cache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/defaultHandling/Default.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/Default.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/defaultHandling/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/DefaultConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/defaultHandling/DefaultHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/defaultHandling/DefaultHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/ToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/ToStringMethodInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringMethodInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/toString/ToStringParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/toString/ToStringParameter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +131,7 @@
       <workItem from="1680550458842" duration="10827000" />
       <workItem from="1680586563147" duration="3271000" />
       <workItem from="1680614649690" duration="2555000" />
-      <workItem from="1680617218363" duration="1372000" />
+      <workItem from="1680617218363" duration="2525000" />
     </task>
     <servers />
   </component>
@@ -151,7 +164,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/muzhevsky/main/Main.java</url>
-          <line>15</line>
+          <line>13</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

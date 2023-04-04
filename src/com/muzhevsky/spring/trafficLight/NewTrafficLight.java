@@ -1,4 +1,4 @@
-package com.muzhevsky.spring;
+package com.muzhevsky.spring.trafficLight;
 
 import com.muzhevsky.core.trafficLight.Colorable;
 

@@ -1,4 +1,4 @@
-package com.muzhevsky.spring;
+package com.muzhevsky.spring.configs;
 
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;

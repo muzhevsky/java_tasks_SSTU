@@ -1,4 +1,4 @@
-package com.muzhevsky.spring.utils;
+package com.muzhevsky.spring.cache;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

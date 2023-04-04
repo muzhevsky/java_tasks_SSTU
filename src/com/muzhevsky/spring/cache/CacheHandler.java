@@ -1,13 +1,10 @@
-package com.muzhevsky.spring.utils;
-
-import com.muzhevsky.spring.utils.annotations.Cache;
+package com.muzhevsky.spring.cache;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class CacheHandler implements InvocationHandler {
 

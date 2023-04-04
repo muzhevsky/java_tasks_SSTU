@@ -23,10 +23,11 @@ public class NamePostProcessor implements BeanPostProcessor {
     public Object postProcessAfterInitialization(Object bean, String beanName) {
         var realObject = objects.containsKey(beanName) ? objects.get(beanName) : bean;
         for(Field field : getAllFields(bean.getClass())){
-            if (field.getName() == "name") {
+            if (field.getName().equals("name")) {
                 field.setAccessible(true);
                 try {
-                    field.set(bean, "vasya");
+                    if (field.get(bean) == null)
+                        field.set(bean, "vasya");
                 } catch (IllegalAccessException e) {
                     throw new RuntimeException(e);
                 }

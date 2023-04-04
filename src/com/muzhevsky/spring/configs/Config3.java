@@ -1,4 +1,4 @@
-package com.muzhevsky.spring;
+package com.muzhevsky.spring.configs;
 
 import com.muzhevsky.spring.utils.test.SomeClass;
 import org.springframework.context.annotation.Bean;

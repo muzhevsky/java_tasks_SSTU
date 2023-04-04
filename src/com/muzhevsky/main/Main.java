@@ -1,7 +1,5 @@
 package com.muzhevsky.main;
 
-import com.muzhevsky.core.student.Student;
-import com.muzhevsky.spring.NewColor;
 import com.muzhevsky.spring.utils.test.SomeClass;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.muzhevsky.spring.utils.toString;
+package com.muzhevsky.spring.toString;
 
 public enum ToStringParameter {
     YES, NO;
