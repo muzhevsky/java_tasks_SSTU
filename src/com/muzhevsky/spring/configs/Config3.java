@@ -1,6 +1,7 @@
 package com.muzhevsky.spring.configs;
 
 import com.muzhevsky.spring.utils.test.SomeClass;
+import com.muzhevsky.spring.utils.test.SomeClassTests;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -11,5 +12,11 @@ public class Config3 {
     @Scope("prototype")
     public SomeClass someObject(){
         return new SomeClass("test",5);
+    }
+
+    @Bean("someClassTests")
+    @Scope("singleton")
+    public SomeClassTests someClassTests(){
+        return new SomeClassTests();
     }
 }

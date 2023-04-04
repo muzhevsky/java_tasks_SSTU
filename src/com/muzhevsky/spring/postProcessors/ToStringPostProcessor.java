@@ -15,7 +15,7 @@ import java.util.Map;
 
 import static com.muzhevsky.spring.utils.MyUtils.*;
 
-@Component
+//@Component
 public class ToStringPostProcessor implements BeanPostProcessor {
     Map<String, Object> objects = new HashMap<>();
     @Override
@@ -30,8 +30,6 @@ public class ToStringPostProcessor implements BeanPostProcessor {
 
         Enhancer enhancer = new Enhancer();
         Class<?> clazz = realObject.getClass();
-        if (Modifier.isFinal(bean.getClass().getModifiers()) || !bean.getClass().isAnnotationPresent(ToString.class))
-            return bean;
 
         enhancer.setSuperclass(clazz);
         enhancer.setCallback(new ToStringMethodInterceptor());
@@ -47,6 +45,6 @@ public class ToStringPostProcessor implements BeanPostProcessor {
             }
         }
 
-        return bean;
+        return proxy;
     }
 }

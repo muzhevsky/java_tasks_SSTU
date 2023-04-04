@@ -13,7 +13,8 @@ public class CacheMethodInterceptor implements MethodInterceptor {
 
     @Override
     public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
-        if (!method.isAnnotationPresent(Cache.class)) return method.invoke(proxy, args);
+        if (!method.isAnnotationPresent(Cache.class))
+            return proxy.invokeSuper(obj, args);
 
         for (var item : _cachedData.keySet()){
             if (item.getMethod() == method && Arrays.equals(item.getArgs(), args) && obj == item.getOwner())

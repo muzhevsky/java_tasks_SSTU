@@ -8,7 +8,7 @@ import com.muzhevsky.spring.utils.annotations.Validate;
 
 import java.util.Random;
 
-@Validate(SomeClassTests.class)
+@Validate("someClassTests")
 @Cache
 public class SomeClass implements SomeInterface {
     @Default(DefaultConfig.class)

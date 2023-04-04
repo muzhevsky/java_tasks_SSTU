@@ -107,22 +107,22 @@ public abstract class MyUtils {
         return result;
     }
 
-    public static void validate(Object object) throws Exception {
-        var testContainer = object.getClass().getAnnotation(Validate.class);
-        if (testContainer == null) throw new ValidateException("there is no tests for this object");
-
-        for (var testSet : testContainer.value()) {
-            var tests = testSet.getDeclaredMethods();
-            for (var test : tests) {
-                try {
-                    test.invoke(testSet.newInstance(), object);
-                }
-                catch (InvocationTargetException ex){
-                    throw new ValidateException(ex.getCause().getMessage());
-                }
-            }
-        }
-    }
+//    public static void validate(Object object) throws Exception {
+//        var testContainer = object.getClass().getAnnotation(Validate.class);
+//        if (testContainer == null) throw new ValidateException("there is no tests for this object");
+//
+//        for (var testSet : testContainer.value()) {
+//            var tests = testSet.getDeclaredMethods();
+//            for (var test : tests) {
+//                try {
+//                    test.invoke(testSet.newInstance(), object);
+//                }
+//                catch (InvocationTargetException ex){
+//                    throw new ValidateException(ex.getCause().getMessage());
+//                }
+//            }
+//        }
+//    }
 
     public static <T> T getValueOfNecessaryType(Object item, String fieldName) throws Exception{
         Class<?> clazz = item.getClass();
