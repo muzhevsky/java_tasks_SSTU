@@ -1,4 +1,4 @@
-package com.muzhevsky.spring.utils.toString;
+package com.muzhevsky.spring.toString;
 
 import java.lang.reflect.Field;
 import java.util.Set;

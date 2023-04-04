@@ -1,7 +1,7 @@
-package com.muzhevsky.spring.utils;
+package com.muzhevsky.spring.utils.test;
 
 
-import com.muzhevsky.spring.utils.annotations.Cache;
+import com.muzhevsky.spring.cache.Cache;
 
 @Cache
 public class Child extends Parent {

@@ -1,4 +1,4 @@
-package com.muzhevsky.spring.utils.toString;
+package com.muzhevsky.spring.toString;
 
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;

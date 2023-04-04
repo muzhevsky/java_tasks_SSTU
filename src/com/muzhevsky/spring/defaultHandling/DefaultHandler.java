@@ -1,4 +1,4 @@
-package com.muzhevsky.spring.utils.defaultHandling;
+package com.muzhevsky.spring.defaultHandling;
 
 import com.muzhevsky.spring.utils.MyUtils;
 

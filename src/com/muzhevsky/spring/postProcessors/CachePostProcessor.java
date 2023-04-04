@@ -1,7 +1,7 @@
 package com.muzhevsky.spring.postProcessors;
 
-import com.muzhevsky.spring.utils.CacheMethodInterceptor;
-import com.muzhevsky.spring.utils.annotations.Cache;
+import com.muzhevsky.spring.cache.CacheMethodInterceptor;
+import com.muzhevsky.spring.cache.Cache;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.cglib.proxy.Enhancer;
@@ -25,12 +25,12 @@ public class CachePostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-//      if (objects.containsKey(beanName)) bean = objects.get(beanName);
+        var realObject = objects.containsKey(beanName) ? objects.get(beanName) : bean;
 
         Enhancer enhancer = new Enhancer();
-        Class<?> clazz = bean.getClass();
+        Class<?> clazz = realObject.getClass();
 
-        if (Modifier.isFinal(clazz.getModifiers()) || !clazz.isAnnotationPresent(Cache.class))
+        if (Modifier.isFinal(bean.getClass().getModifiers()) || !bean.getClass().isAnnotationPresent(Cache.class))
             return bean;
 
         enhancer.setSuperclass(clazz);

@@ -1,7 +1,5 @@
-package com.muzhevsky.spring.utils;
+package com.muzhevsky.spring.cache;
 
-import com.muzhevsky.spring.utils.annotations.Cache;
-import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;
 

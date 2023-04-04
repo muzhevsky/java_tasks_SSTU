@@ -1,6 +1,8 @@
 package com.muzhevsky.spring.postProcessors;
 
-import com.muzhevsky.spring.utils.toString.ToStringMethodInterceptor;
+import com.muzhevsky.spring.cache.Cache;
+import com.muzhevsky.spring.toString.ToString;
+import com.muzhevsky.spring.toString.ToStringMethodInterceptor;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.cglib.proxy.Enhancer;
@@ -24,11 +26,12 @@ public class ToStringPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+        var realObject = objects.containsKey(beanName) ? objects.get(beanName) : bean;
 
         Enhancer enhancer = new Enhancer();
-        Class<?> clazz = bean.getClass();
-//        if (Modifier.isFinal(clazz.getModifiers())) return bean;
-//        if (!hasDefaultConstructor(clazz)) return bean;
+        Class<?> clazz = realObject.getClass();
+        if (Modifier.isFinal(bean.getClass().getModifiers()) || !bean.getClass().isAnnotationPresent(ToString.class))
+            return bean;
 
         enhancer.setSuperclass(clazz);
         enhancer.setCallback(new ToStringMethodInterceptor());

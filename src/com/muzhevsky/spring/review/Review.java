@@ -1,4 +1,4 @@
-package com.muzhevsky.spring;
+package com.muzhevsky.spring.review;
 
 public class Review {
     private String text;

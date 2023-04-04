@@ -1,12 +1,13 @@
-package com.muzhevsky.spring.utils.annotations;
+package com.muzhevsky.spring.toString;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Cache {
-    String[] value() default {};
+@Target({ElementType.FIELD, ElementType.TYPE})
+public @interface ToString {
+     ToStringParameter value() default ToStringParameter.YES;
 }
+

@@ -1,4 +1,4 @@
-package com.muzhevsky.spring;
+package com.muzhevsky.spring.student;
 
 import com.muzhevsky.core.student.Student;
 import org.springframework.beans.BeansException;

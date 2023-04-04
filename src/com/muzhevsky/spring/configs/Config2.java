@@ -1,4 +1,4 @@
-package com.muzhevsky.spring;
+package com.muzhevsky.spring.configs;
 
 import com.muzhevsky.core.shareBots.*;
 import com.muzhevsky.core.student.Student;

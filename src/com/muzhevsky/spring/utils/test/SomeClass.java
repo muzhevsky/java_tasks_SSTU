@@ -1,13 +1,9 @@
 package com.muzhevsky.spring.utils.test;
 
-import com.muzhevsky.spring.Config1;
-import com.muzhevsky.spring.utils.SomeInterface;
-import com.muzhevsky.spring.utils.annotations.Cache;
-import com.muzhevsky.spring.utils.defaultHandling.DefaultConfig;
-import com.muzhevsky.spring.utils.toString.Entity;
-import com.muzhevsky.spring.utils.toString.ToStringParameter;
-import com.muzhevsky.spring.utils.defaultHandling.Default;
-import com.muzhevsky.spring.utils.toString.ToString;
+import com.muzhevsky.spring.cache.Cache;
+import com.muzhevsky.spring.defaultHandling.DefaultConfig;
+import com.muzhevsky.spring.defaultHandling.Default;
+import com.muzhevsky.spring.toString.ToString;
 import com.muzhevsky.spring.utils.annotations.Validate;
 
 import java.util.Random;
