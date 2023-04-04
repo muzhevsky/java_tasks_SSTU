@@ -14,6 +14,7 @@ public class SomeClass implements SomeInterface {
     @Default(DefaultConfig.class)
     @ToString
     private String text;
+    private String name;
     private Random random = new Random();
     private Integer number;
 
@@ -39,4 +40,9 @@ public class SomeClass implements SomeInterface {
         System.out.println("GETTEXT() CALLED");
         return text;
     }
+
+    public String getName(){
+        return name;
+    }
+
 }

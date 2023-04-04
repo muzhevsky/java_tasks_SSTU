@@ -15,19 +15,21 @@ public class NamePostProcessor implements BeanPostProcessor {
     Map<String, Object> objects = new HashMap<>();
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        objects.put(beanName, bean);
+        for(Field field : getAllFields(bean.getClass()))
+            if (field.getName().equals("name"))
+                objects.put(beanName, bean);
         return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) {
-        var realObject = objects.containsKey(beanName) ? objects.get(beanName) : bean;
-        for(Field field : getAllFields(realObject.getClass())){
+        if (!objects.containsKey(beanName)) return bean;
+        for(Field field : getAllFields(bean.getClass())){
             if (field.getName().equals("name")) {
                 field.setAccessible(true);
                 try {
-                    if (field.get(realObject) == null)
-                        field.set(realObject, "vasya");
+                    if (field.get(bean) == null)
+                        field.set(bean, "vasya");
                 } catch (IllegalAccessException e) {
                     throw new RuntimeException(e);
                 }

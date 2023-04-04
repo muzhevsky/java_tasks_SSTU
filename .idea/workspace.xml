@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5a075bb6-8815-488c-a7d4-ce373e441247" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/NamePostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/postProcessors/NamePostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/utils/test/SomeClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +106,7 @@
       <workItem from="1680550458842" duration="10827000" />
       <workItem from="1680586563147" duration="3271000" />
       <workItem from="1680614649690" duration="2555000" />
+      <workItem from="1680617218363" duration="2525000" />
       <workItem from="1680617218363" duration="2594000" />
     </task>
     <servers />
@@ -137,8 +140,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/muzhevsky/main/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="29" />
+          <line>19</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />

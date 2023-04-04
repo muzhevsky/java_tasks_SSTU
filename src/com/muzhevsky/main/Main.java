@@ -16,5 +16,7 @@ public class Main {
         System.out.println(someObj.getRandom());
 
         System.out.println(someObj);
+
+        System.out.println(someObj.getName());
     }
 }
