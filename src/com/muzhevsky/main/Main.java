@@ -25,3 +25,10 @@ public class Main {
         System.out.println(someObj.getNumber());
     }
 }
+
+
+// Storage{
+// List<String>
+// put(String){}
+// get()
+//}
