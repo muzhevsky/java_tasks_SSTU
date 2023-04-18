@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 //@Component
 public class Student {
@@ -68,6 +69,15 @@ public class Student {
             average += mark.getValue();
 
         average /= marks_2.size();
+
+        return average;
+    }
+
+    public double getAverageIntMark(){
+        double average = marks.stream()
+                .reduce(0, (a,b)->a+b);
+
+        average /= marks.size();
 
         return average;
     }
