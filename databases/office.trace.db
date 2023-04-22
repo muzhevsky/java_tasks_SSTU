@@ -1,0 +1,39 @@
+2023-04-18 23:26:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table employee(id int primary key [*]identity(1,1)name nvarchar(50)surname nvarchar(50))"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table employee(id int primary key identity(1,1)name nvarchar(50)surname nvarchar(50)) [42001-214]
+2023-04-18 23:26:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table employee(id int primary key [*]auto_incrementname nvarchar(50)surname nvarchar(50))"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table employee(id int primary key auto_incrementname nvarchar(50)surname nvarchar(50)) [42001-214]
+2023-04-18 23:27:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE" already exists; SQL statement:
+create table employee(id int primary key auto_increment,name nvarchar(50),surname nvarchar(50)) [42101-214]
+2023-04-18 23:33:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table employeedepartment_id [*]int"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+alter table employeedepartment_id int [42001-214]
+2023-04-18 23:33:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPARTMENT" already exists; SQL statement:
+create table department(id int primary key auto_increment,name nvarchar(50)) [42101-214]
+2023-04-18 23:33:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table employeeadd [*]department_id int"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+alter table employeeadd department_id int [42001-214]
+2023-04-18 23:34:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table employee[*](add department_id int)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+alter table employee(add department_id int) [42001-214]
+2023-04-18 23:50:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "0" for parameter "columnIndex" [90008-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcResultSetMetaData.getColumn(JdbcResultSetMetaData.java:422)
+	at org.h2.jdbc.JdbcResultSetMetaData.getColumnName(JdbcResultSetMetaData.java:82)
+	at com.muzhevsky.main.Main.main(Main.java:68)
+2023-04-18 23:50:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "0" for parameter "columnIndex" [90008-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcResultSetMetaData.getColumn(JdbcResultSetMetaData.java:422)
+	at org.h2.jdbc.JdbcResultSetMetaData.getColumnName(JdbcResultSetMetaData.java:82)
+	at com.muzhevsky.main.Main.main(Main.java:69)
