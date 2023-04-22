@@ -8,20 +8,20 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class Config3 {
-    @Bean("someObject")
-    @Scope("prototype")
-    public SomeClass someObject() {
-        return new SomeClass("test", 5);
-    }
-
-    @Bean("someClassTests")
-    @Scope("singleton")
-    public SomeClassTests someClassTests() {
-        return new SomeClassTests();
-    }
-
-    @Bean("hello")
-    public String hello(){
-        return "hello";
-    }
+//    @Bean("someObject")
+//    @Scope("prototype")
+//    public SomeClass someObject() {
+//        return new SomeClass("test", 5);
+//    }
+//
+//    @Bean("someClassTests")
+//    @Scope("singleton")
+//    public SomeClassTests someClassTests() {
+//        return new SomeClassTests();
+//    }
+//
+//    @Bean("hello")
+//    public String hello(){
+//        return "hello";
+//    }
 }

@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a075bb6-8815-488c-a7d4-ce373e441247" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/muzhevsky/spring/configs/Config3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +133,7 @@
       <workItem from="1681883086770" duration="851000" />
       <workItem from="1681884259322" duration="3939000" />
       <workItem from="1682174732556" duration="240000" />
-      <workItem from="1682174981699" duration="2173000" />
+      <workItem from="1682174981699" duration="6936000" />
     </task>
     <servers />
   </component>
